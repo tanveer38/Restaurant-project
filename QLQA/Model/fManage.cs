@@ -363,15 +363,17 @@ namespace QLQA.Model
             foreach(DataRow item in dt2.Rows)
             {
                 string detailid = item["DetailID"].ToString();
+                string proName = item["pName"].ToString();
                 string proid = item["proID"].ToString();
                 string qty = item["qty"].ToString();
                 string price = item["price"].ToString();
                 string amount = item["amount"].ToString();
 
 
-                object[] obj = {0, detailid, proid, qty, price, amount };
+                object[] obj = {0, detailid, proid, proName, qty, price, amount };
                 guna2DataGridView1.Rows.Add(obj);
             }
+            GetTotal();
         }
     }
 }
