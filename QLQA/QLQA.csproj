@@ -74,6 +74,12 @@
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
+    <Compile Include="Model\fBillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\fBillList.Designer.cs">
+      <DependentUpon>fBillList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\fCategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\fBillList.resx">
+      <DependentUpon>fBillList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\fCategoryAdd.resx">
       <DependentUpon>fCategoryAdd.cs</DependentUpon>
@@ -372,6 +381,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\staff2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillList.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

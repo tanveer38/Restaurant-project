@@ -42,3 +42,4 @@ D:\C#\Restaurant-Manager\QLQA\obj\Debug\QLQA.exe
 D:\C#\Restaurant-Manager\QLQA\obj\Debug\QLQA.Model.fTableSelect.resources
 D:\C#\Restaurant-Manager\QLQA\obj\Debug\QLQA.Model.fWaiterSelect.resources
 D:\C#\Restaurant-Manager\QLQA\obj\Debug\QLQA.View.fKitchenView.resources
+D:\C#\Restaurant-Manager\QLQA\obj\Debug\QLQA.Model.fBillList.resources

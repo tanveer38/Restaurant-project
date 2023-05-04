@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -318,17 +319,59 @@ namespace QLQA.Model
                 cmd2.ExecuteNonQuery();
                 if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
-                guna2MessageDialog1.Show("Lưu thành công");
-                MainID = 0;
-                detailID = 0;
-                guna2DataGridView1.Rows.Clear();
-                lblTable.Text = "";
-                lblWaiter.Text = "";
-                lblTable.Visible = false;
-                lblWaiter.Visible = false;
-                lblTotal.Text = "00";
-            }
 
+            }
+            guna2MessageDialog1.Show("Lưu thành công");
+            MainID = 0;
+            detailID = 0;
+            guna2DataGridView1.Rows.Clear();
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "00";
+
+        }
+
+        public int id = 0;
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            fBillList f = new fBillList();
+            MainClass.BlurBackground(f);
+
+             if( f.MainID > 0)
+             {
+                id = f.MainID;
+                LoadEntries();
+             }
+        }
+
+        private void LoadEntries()
+        {
+            string query = @"Select * from tblMain m
+                                    inner join tblDetails d on m.MainID = d.MainID
+                                    inner join products p on p.pID = d.proID
+                                        where m.MainID = " + id + "";
+
+            SqlCommand cmd2 = new SqlCommand(query, MainClass.con);
+            DataTable dt2 = new DataTable();
+            SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
+            da2.Fill(dt2);
+
+            guna2DataGridView1.Rows.Clear();
+
+            foreach(DataRow item in dt2.Rows)
+            {
+                string detailid = item["DetailID"].ToString();
+                string proid = item["proID"].ToString();
+                string qty = item["qty"].ToString();
+                string price = item["price"].ToString();
+                string amount = item["amount"].ToString();
+
+
+                object[] obj = {0, detailid, proid, qty, price, amount };
+                guna2DataGridView1.Rows.Add(obj);
+            }
         }
     }
 }
