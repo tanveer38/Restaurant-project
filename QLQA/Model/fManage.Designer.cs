@@ -44,6 +44,7 @@
             this.btnNew = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnCheckout = new Guna.UI2.WinForms.Guna2Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CategoryPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -292,6 +293,7 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.btnCheckout);
             this.guna2Panel2.Controls.Add(this.lblTotal);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -300,6 +302,27 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1221, 63);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // btnCheckout
+            // 
+            this.btnCheckout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCheckout.AutoRoundedCorners = true;
+            this.btnCheckout.BackColor = System.Drawing.Color.Transparent;
+            this.btnCheckout.BorderRadius = 23;
+            this.btnCheckout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCheckout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCheckout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCheckout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCheckout.ForeColor = System.Drawing.Color.White;
+            this.btnCheckout.Location = new System.Drawing.Point(865, 11);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(126, 49);
+            this.btnCheckout.TabIndex = 13;
+            this.btnCheckout.Tag = "";
+            this.btnCheckout.Text = "Thanh toán";
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // lblTotal
             // 
@@ -566,5 +589,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
+        public Guna.UI2.WinForms.Guna2Button btnCheckout;
     }
 }

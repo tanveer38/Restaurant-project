@@ -11,6 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace QLQA.Model
 {
@@ -207,7 +208,7 @@ namespace QLQA.Model
             lblWaiter.Text = "";
             lblTable.Visible = false;
             lblWaiter.Visible = false;
-            OrderType = "Vận chuyển";
+            OrderType = "Van chuyen";
         }
 
         private void btnTake_Click(object sender, EventArgs e)
@@ -221,7 +222,7 @@ namespace QLQA.Model
 
         private void btnDin_Click(object sender, EventArgs e)
         {
-            OrderType = "Ăn tại quán";
+            OrderType = "An tai quan";
 
             fTableSelect f = new fTableSelect();
             MainClass.BlurBackground(f);
@@ -358,10 +359,35 @@ namespace QLQA.Model
             SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
             da2.Fill(dt2);
 
+
+            if (dt2.Rows[0]["orderType"].ToString() == "Van chuyen")
+            {
+                btnDelivery.Checked= true;
+                lblWaiter.Visible = false;
+                lblTable.Visible= false;
+            }
+            else if (dt2.Rows[0]["orderType"].ToString() == "Mua mang di")
+            {
+                btnTake.Checked = true;
+                lblWaiter.Visible = false;
+                lblTable.Visible = false;
+            }
+            else
+            {
+                btnDin.Checked = true;
+                lblWaiter.Visible = true;
+                lblTable.Visible = true;
+               
+            }
+
             guna2DataGridView1.Rows.Clear();
 
             foreach(DataRow item in dt2.Rows)
             {
+                lblTable.Text = item["TableName"].ToString();
+                lblWaiter.Text = item["WaiterName"].ToString();
+
+
                 string detailid = item["DetailID"].ToString();
                 string proName = item["pName"].ToString();
                 string proid = item["proID"].ToString();
@@ -374,6 +400,22 @@ namespace QLQA.Model
                 guna2DataGridView1.Rows.Add(obj);
             }
             GetTotal();
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            fCheckout f = new fCheckout();
+            f.MainID = id;
+            f.amt = Convert.ToDouble(lblTotal.Text);
+            MainClass.BlurBackground(f);
+
+            MainID = 0;
+            guna2DataGridView1.Rows.Clear();
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "00";
         }
     }
 }
