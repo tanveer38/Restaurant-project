@@ -67,12 +67,13 @@ namespace QLQA.View
                 GetData();
 
             }
+
             // Delete
-            guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
-            guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
             {
                 // Xác nhận trước khi xóa
+                guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
+                guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
                 if (guna2MessageDialog1.Show("Bạn có muốn xóa không?") == DialogResult.Yes)
                 {
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);

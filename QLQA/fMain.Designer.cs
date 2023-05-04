@@ -30,7 +30,7 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSettings = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnKetchen = new Guna.UI2.WinForms.Guna2Button();
             this.btnPOS = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
             this.btnTable = new Guna.UI2.WinForms.Guna2Button();
@@ -52,7 +52,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.btnSettings);
-            this.guna2Panel1.Controls.Add(this.guna2Button7);
+            this.guna2Panel1.Controls.Add(this.btnKetchen);
             this.guna2Panel1.Controls.Add(this.btnPOS);
             this.guna2Panel1.Controls.Add(this.btnStaff);
             this.guna2Panel1.Controls.Add(this.btnTable);
@@ -96,33 +96,34 @@
             this.btnSettings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSettings.TextOffset = new System.Drawing.Point(20, 0);
             // 
-            // guna2Button7
+            // btnKetchen
             // 
-            this.guna2Button7.AutoRoundedCorners = true;
-            this.guna2Button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button7.BorderRadius = 21;
-            this.guna2Button7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.guna2Button7.CheckedState.Image = global::QLQA.Properties.Resources.kitchen2;
-            this.guna2Button7.CustomizableEdges.BottomRight = false;
-            this.guna2Button7.CustomizableEdges.TopRight = false;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Image = global::QLQA.Properties.Resources.kitchen;
-            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.ImageOffset = new System.Drawing.Point(8, 0);
-            this.guna2Button7.Location = new System.Drawing.Point(61, 419);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button7.TabIndex = 7;
-            this.guna2Button7.Text = "Nhà bếp";
-            this.guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.TextOffset = new System.Drawing.Point(18, 0);
+            this.btnKetchen.AutoRoundedCorners = true;
+            this.btnKetchen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnKetchen.BorderRadius = 21;
+            this.btnKetchen.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnKetchen.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnKetchen.CheckedState.Image = global::QLQA.Properties.Resources.kitchen2;
+            this.btnKetchen.CustomizableEdges.BottomRight = false;
+            this.btnKetchen.CustomizableEdges.TopRight = false;
+            this.btnKetchen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKetchen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKetchen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKetchen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKetchen.FillColor = System.Drawing.Color.Transparent;
+            this.btnKetchen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnKetchen.ForeColor = System.Drawing.Color.White;
+            this.btnKetchen.Image = global::QLQA.Properties.Resources.kitchen;
+            this.btnKetchen.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnKetchen.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnKetchen.Location = new System.Drawing.Point(61, 419);
+            this.btnKetchen.Name = "btnKetchen";
+            this.btnKetchen.Size = new System.Drawing.Size(180, 45);
+            this.btnKetchen.TabIndex = 7;
+            this.btnKetchen.Text = "Nhà bếp";
+            this.btnKetchen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnKetchen.TextOffset = new System.Drawing.Point(18, 0);
+            this.btnKetchen.Click += new System.EventHandler(this.btnKetchen_Click);
             // 
             // btnPOS
             // 
@@ -412,7 +413,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2Button btnSettings;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button btnKetchen;
         private Guna.UI2.WinForms.Guna2Button btnPOS;
         private Guna.UI2.WinForms.Guna2Button btnStaff;
         private Guna.UI2.WinForms.Guna2Button btnTable;

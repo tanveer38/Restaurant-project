@@ -80,5 +80,11 @@ namespace QLQA
             fManage f = new fManage();
             f.Show();
         }
+
+        private void btnKetchen_Click(object sender, EventArgs e)
+        {
+            AddControls(new fKitchenView());
+
+        }
     }
 }
