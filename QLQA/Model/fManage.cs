@@ -24,6 +24,10 @@ namespace QLQA.Model
 
         public int MainID = 0;
         public string OrderType = "";
+        public int driverID = 0;
+        public string customerName = "";
+        public string customerPhone = "";
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -209,6 +213,24 @@ namespace QLQA.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             OrderType = "Van chuyen";
+
+            fAddCustomer f = new fAddCustomer();
+            f.mainID = MainID;
+            f.orderType = OrderType;
+            MainClass.BlurBackground(f);
+
+
+            if (f.txtName.Text != "") // Mua mang đi không có thông tin người giao hàng
+            {
+                driverID = f.driverID;
+                lblDriverName.Text = "Tên khách hàng: " + f.txtName.Text
+                                    + "Số điện thoại: " + f.txtPhone.Text
+                                    + "Người giao hàng: " + f.cbDriver.Text;
+                lblDriverName.Visible = true;
+                customerName = f.txtName.Text;
+                customerPhone = f.txtPhone.Text;
+
+            }
         }
 
         private void btnTake_Click(object sender, EventArgs e)
@@ -218,12 +240,31 @@ namespace QLQA.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             OrderType = "Mua mang đi";
+
+            fAddCustomer f =new fAddCustomer ();
+            f.mainID = MainID;
+            f.orderType= OrderType;
+            MainClass.BlurBackground(f);
+
+
+            if(f.txtName.Text != "") // Mua mang đi không có thông tin người giao hàng
+            {
+                driverID = f.driverID;
+                lblDriverName.Text = "Tên khách hàng: " + f.txtName.Text
+                                    + "Số điện thoại: " + f.txtPhone.Text;             
+                lblDriverName.Visible = true;
+                customerName = f.txtName.Text;
+                customerPhone = f.txtPhone.Text;
+
+            }
         }
 
         private void btnDin_Click(object sender, EventArgs e)
         {
             OrderType = "An tai quan";
+            lblDriverName.Visible = false;
 
+            // Tạo form cho chọn bàn và chọn phục vụ
             fTableSelect f = new fTableSelect();
             MainClass.BlurBackground(f);
             if (f.TableName != "")
@@ -255,6 +296,8 @@ namespace QLQA.Model
 
         private void btnKot_Click(object sender, EventArgs e)
         {
+            // Thêm thông tin filed vào table để lưu trữ thông tin bổ sung
+
             string query1 = ""; // Main table
             string query2 = ""; // Detail table
 
@@ -263,7 +306,7 @@ namespace QLQA.Model
             if (MainID == 0) // Insert
             {
                 query1 = @"Insert into tblMain Values(@aDate, @aTime, @TableName, @WaiterName, 
-                            @status, @orderType, @total, @received, @change);
+                            @status, @orderType, @total, @received, @change, @driverID, @custName, @custPhone);
                                 Select SCOPE_IDENTITY()";
                 // Dòng nhận giá trị id gân đây
 
@@ -287,8 +330,12 @@ namespace QLQA.Model
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text)); // Chỉ lưu dât cho giá trị nhà bếp sẽ cập nhật khi thanh toán hóa đơn
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
             cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@driverID", driverID);
+            cmd.Parameters.AddWithValue("@custName", customerName);
+            cmd.Parameters.AddWithValue("@custPhone", customerPhone);
 
-            if(MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+
+            if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
             if(MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
             if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
@@ -331,6 +378,7 @@ namespace QLQA.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             lblTotal.Text = "00";
+            lblDriverName.Text = "";
 
         }
 
@@ -435,7 +483,7 @@ namespace QLQA.Model
             if (MainID == 0) // Insert
             {
                 query1 = @"Insert into tblMain Values(@aDate, @aTime, @TableName, @WaiterName, 
-                            @status, @orderType, @total, @received, @change);
+                            @status, @orderType, @total, @received, @change, @driverID, @custName, @custPhone);
                                 Select SCOPE_IDENTITY()";
                 // Dòng nhận giá trị id gân đây
 
@@ -459,6 +507,9 @@ namespace QLQA.Model
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text)); // Chỉ lưu dât cho giá trị nhà bếp sẽ cập nhật khi thanh toán hóa đơn
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
             cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@driverID", driverID);
+            cmd.Parameters.AddWithValue("@custName", customerName);
+            cmd.Parameters.AddWithValue("@custPhone", customerPhone);
 
             if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
             if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
@@ -503,6 +554,7 @@ namespace QLQA.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             lblTotal.Text = "00";
+            lblDriverName.Text = "";
         }
     }
 }

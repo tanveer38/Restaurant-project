@@ -30,8 +30,8 @@
         {
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbRole = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cbDriver = new System.Windows.Forms.Label();
+            this.cbDriver = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblDriver = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -63,7 +63,7 @@
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(283, 48);
-            this.txtName.TabIndex = 4;
+            this.txtName.TabIndex = 2;
             // 
             // label2
             // 
@@ -75,36 +75,37 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Tên ";
             // 
-            // cbRole
+            // cbDriver
             // 
-            this.cbRole.BackColor = System.Drawing.Color.Transparent;
-            this.cbRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbRole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbRole.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.cbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbRole.ItemHeight = 30;
-            this.cbRole.Items.AddRange(new object[] {
+            this.cbDriver.BackColor = System.Drawing.Color.Transparent;
+            this.cbDriver.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDriver.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDriver.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDriver.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDriver.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.cbDriver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbDriver.ItemHeight = 30;
+            this.cbDriver.Items.AddRange(new object[] {
             "Thu ngan",
             "Phuc vu",
             "Nhan vien ve sinh",
             "Quan ly",
             "Khac"});
-            this.cbRole.Location = new System.Drawing.Point(13, 29);
-            this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(283, 36);
-            this.cbRole.TabIndex = 8;
-            // 
-            // cbDriver
-            // 
-            this.cbDriver.AutoSize = true;
-            this.cbDriver.ForeColor = System.Drawing.Color.Black;
-            this.cbDriver.Location = new System.Drawing.Point(13, 10);
+            this.cbDriver.Location = new System.Drawing.Point(13, 29);
             this.cbDriver.Name = "cbDriver";
-            this.cbDriver.Size = new System.Drawing.Size(106, 16);
-            this.cbDriver.TabIndex = 9;
-            this.cbDriver.Text = "Người giao hàng";
+            this.cbDriver.Size = new System.Drawing.Size(283, 36);
+            this.cbDriver.TabIndex = 1;
+            this.cbDriver.SelectedIndexChanged += new System.EventHandler(this.cbDriver_SelectedIndexChanged);
+            // 
+            // lblDriver
+            // 
+            this.lblDriver.AutoSize = true;
+            this.lblDriver.ForeColor = System.Drawing.Color.Black;
+            this.lblDriver.Location = new System.Drawing.Point(13, 10);
+            this.lblDriver.Name = "lblDriver";
+            this.lblDriver.Size = new System.Drawing.Size(106, 16);
+            this.lblDriver.TabIndex = 4;
+            this.lblDriver.Text = "Người giao hàng";
             // 
             // guna2Panel1
             // 
@@ -116,7 +117,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(572, 131);
-            this.guna2Panel1.TabIndex = 10;
+            this.guna2Panel1.TabIndex = 1;
             // 
             // label1
             // 
@@ -127,7 +128,7 @@
             this.label1.Location = new System.Drawing.Point(165, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(312, 32);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Thêm thông tin khách hàng";
             // 
             // pictureBox1
@@ -143,8 +144,8 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add(this.lblDriver);
             this.flowLayoutPanel1.Controls.Add(this.cbDriver);
-            this.flowLayoutPanel1.Controls.Add(this.cbRole);
             this.flowLayoutPanel1.Controls.Add(this.label2);
             this.flowLayoutPanel1.Controls.Add(this.txtName);
             this.flowLayoutPanel1.Controls.Add(this.label3);
@@ -154,7 +155,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(423, 262);
-            this.flowLayoutPanel1.TabIndex = 11;
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label3
             // 
@@ -163,7 +164,7 @@
             this.label3.Location = new System.Drawing.Point(13, 140);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 16);
-            this.label3.TabIndex = 10;
+            this.label3.TabIndex = 5;
             this.label3.Text = "Số điện thoại";
             // 
             // txtPhone
@@ -185,7 +186,7 @@
             this.txtPhone.PlaceholderText = "";
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(283, 48);
-            this.txtPhone.TabIndex = 11;
+            this.txtPhone.TabIndex = 3;
             // 
             // guna2ControlBox1
             // 
@@ -195,7 +196,7 @@
             this.guna2ControlBox1.Location = new System.Drawing.Point(515, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 5;
+            this.guna2ControlBox1.TabIndex = 0;
             // 
             // fAddCustomer
             // 
@@ -207,7 +208,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fAddCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fAddCustomer";
             this.Load += new System.EventHandler(this.fAddCustomer_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -222,8 +222,8 @@
 
         public Guna.UI2.WinForms.Guna2TextBox txtName;
         private System.Windows.Forms.Label label2;
-        public Guna.UI2.WinForms.Guna2ComboBox cbRole;
-        private System.Windows.Forms.Label cbDriver;
+        public Guna.UI2.WinForms.Guna2ComboBox cbDriver;
+        private System.Windows.Forms.Label lblDriver;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label label1;

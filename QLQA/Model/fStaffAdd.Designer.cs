@@ -136,6 +136,7 @@
             "Phuc vu",
             "Nhan vien ve sinh",
             "Quan ly",
+            "Nguoi giao hang",
             "Khac"});
             this.cbRole.Location = new System.Drawing.Point(52, 400);
             this.cbRole.Name = "cbRole";

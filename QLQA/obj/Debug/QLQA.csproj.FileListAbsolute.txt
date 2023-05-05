@@ -75,3 +75,4 @@ D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.csproj.CopyComplete
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.exe
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.pdb
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.Model.fCheckout.resources
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.Model.fAddCustomer.resources
