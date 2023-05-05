@@ -23,7 +23,7 @@ namespace QLQA.Model
         }
 
         public int MainID = 0;
-        public string OrderType;
+        public string OrderType = "";
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -343,6 +343,7 @@ namespace QLQA.Model
              if( f.MainID > 0)
              {
                 id = f.MainID;
+                MainID = f.MainID;
                 LoadEntries();
              }
         }
@@ -410,6 +411,92 @@ namespace QLQA.Model
             MainClass.BlurBackground(f);
 
             MainID = 0;
+            guna2DataGridView1.Rows.Clear();
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "00";
+        }
+
+        private void btnHold_Click(object sender, EventArgs e)
+        {
+            string query1 = ""; // Main table
+            string query2 = ""; // Detail table
+
+            int detailID = 0;
+
+            if(OrderType == "")
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
+                return;
+            }
+
+            if (MainID == 0) // Insert
+            {
+                query1 = @"Insert into tblMain Values(@aDate, @aTime, @TableName, @WaiterName, 
+                            @status, @orderType, @total, @received, @change);
+                                Select SCOPE_IDENTITY()";
+                // Dòng nhận giá trị id gân đây
+
+            }
+            else // Update
+            {
+                query1 = @"Update tblMain Set status = @status, total = @total, 
+                        received = @received, change = @change where MainID = @ID";
+            }
+
+
+
+            SqlCommand cmd = new SqlCommand(query1, MainClass.con);
+            cmd.Parameters.AddWithValue("@ID", MainID);
+            cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
+            cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
+            cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
+            cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
+            cmd.Parameters.AddWithValue("@status", "Hold");
+            cmd.Parameters.AddWithValue("@orderType", OrderType);
+            cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text)); // Chỉ lưu dât cho giá trị nhà bếp sẽ cập nhật khi thanh toán hóa đơn
+            cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+
+            if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+            if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
+            if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
+
+
+            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+            {
+                detailID = Convert.ToInt32(row.Cells["dgvid"].Value);
+
+                if (detailID == 0) // Insert
+                {
+                    query2 = @"Insert into tblDetails Values(@MainID, @proID, @qty, @price, @amount)";
+                }
+                else // Update
+                {
+                    query2 = @"Update tblDetails Set proID = @proID, qty = @qty, price = @price, amount = @amount
+                                where DetailID = @ID";
+
+                }
+
+                SqlCommand cmd2 = new SqlCommand(query2, MainClass.con);
+                cmd2.Parameters.AddWithValue("@ID", detailID);
+                cmd2.Parameters.AddWithValue("@MainID", MainID);
+                cmd2.Parameters.AddWithValue("@proID", Convert.ToInt32(row.Cells["dgvproID"].Value));
+                cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
+                cmd2.Parameters.AddWithValue("@price", Convert.ToDouble(row.Cells["dgvPrice"].Value));
+                cmd2.Parameters.AddWithValue("@amount", Convert.ToDouble(row.Cells["dgvAmount"].Value));
+
+                if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+                cmd2.ExecuteNonQuery();
+                if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
+
+
+            }
+            guna2MessageDialog1.Show("Lưu thành công");
+            MainID = 0;
+            detailID = 0;
             guna2DataGridView1.Rows.Clear();
             lblTable.Text = "";
             lblWaiter.Text = "";

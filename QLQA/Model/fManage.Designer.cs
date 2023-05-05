@@ -255,6 +255,7 @@
             this.btnHold.Size = new System.Drawing.Size(81, 65);
             this.btnHold.TabIndex = 4;
             this.btnHold.Text = "Hold";
+            this.btnHold.Click += new System.EventHandler(this.btnHold_Click);
             // 
             // btnNew
             // 
