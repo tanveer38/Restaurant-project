@@ -17,10 +17,6 @@ namespace QLQA
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -40,6 +36,16 @@ namespace QLQA
             // Thêm 1 user
 
 
+        }
+
+        private void guna2PictureBox4_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = false;
+        }
+
+        private void guna2PictureBox4_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = true;
         }
     }
 }

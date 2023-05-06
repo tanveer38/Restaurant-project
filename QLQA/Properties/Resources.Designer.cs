@@ -373,6 +373,26 @@ namespace QLQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_login_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-login-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_login_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-login-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kitchen {
             get {
                 object obj = ResourceManager.GetObject("kitchen", resourceCulture);
@@ -436,6 +456,36 @@ namespace QLQA.Properties {
         internal static System.Drawing.Bitmap logo4 {
             get {
                 object obj = ResourceManager.GetObject("logo4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Password {
+            get {
+                object obj = ResourceManager.GetObject("Password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Password1 {
+            get {
+                object obj = ResourceManager.GetObject("Password1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Password2 {
+            get {
+                object obj = ResourceManager.GetObject("Password2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -636,6 +686,26 @@ namespace QLQA.Properties {
         internal static System.Drawing.Bitmap table2 {
             get {
                 object obj = ResourceManager.GetObject("table2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Username {
+            get {
+                object obj = ResourceManager.GetObject("Username", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Username1 {
+            get {
+                object obj = ResourceManager.GetObject("Username1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -421,5 +421,20 @@
   <ItemGroup>
     <None Include="Resources\Account3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Username1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
