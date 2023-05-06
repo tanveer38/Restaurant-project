@@ -38,7 +38,7 @@ namespace QLQA.Model
         public override void btnSave_Click(object sender, EventArgs e)
         {
             string query = @"Update tblMain set total = @total, received = @rec, change = @change,
-                             status = 'Paid' where MainID = @id";
+                             status = N'Đã thanh toán' where MainID = @id";
 
             Hashtable ht = new Hashtable();
             ht.Add("@id", MainID);

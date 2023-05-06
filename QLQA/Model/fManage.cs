@@ -212,7 +212,7 @@ namespace QLQA.Model
             lblWaiter.Text = "";
             lblTable.Visible = false;
             lblWaiter.Visible = false;
-            OrderType = "Van chuyen";
+            OrderType = "Vận chuyển";
 
             fAddCustomer f = new fAddCustomer();
             f.mainID = MainID;
@@ -239,7 +239,7 @@ namespace QLQA.Model
             lblWaiter.Text = "";
             lblTable.Visible = false;
             lblWaiter.Visible = false;
-            OrderType = "Mua mang đi";
+            OrderType = "Mua mang về";
 
             fAddCustomer f =new fAddCustomer ();
             f.mainID = MainID;
@@ -261,7 +261,7 @@ namespace QLQA.Model
 
         private void btnDin_Click(object sender, EventArgs e)
         {
-            OrderType = "An tai quan";
+            OrderType = "Ăn tại quán";
             lblDriverName.Visible = false;
 
             // Tạo form cho chọn bàn và chọn phục vụ
@@ -325,7 +325,7 @@ namespace QLQA.Model
             cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
             cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
             cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
-            cmd.Parameters.AddWithValue("@status", "Pending");
+            cmd.Parameters.AddWithValue("@status", "Chờ");
             cmd.Parameters.AddWithValue("@orderType", OrderType);
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text)); // Chỉ lưu dât cho giá trị nhà bếp sẽ cập nhật khi thanh toán hóa đơn
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
@@ -409,13 +409,13 @@ namespace QLQA.Model
             da2.Fill(dt2);
 
 
-            if (dt2.Rows[0]["orderType"].ToString() == "Van chuyen")
+            if (dt2.Rows[0]["orderType"].ToString() == "Vận Chuyển")
             {
                 btnDelivery.Checked= true;
                 lblWaiter.Visible = false;
                 lblTable.Visible= false;
             }
-            else if (dt2.Rows[0]["orderType"].ToString() == "Mua mang di")
+            else if (dt2.Rows[0]["orderType"].ToString() == "Mua mang về")
             {
                 btnTake.Checked = true;
                 lblWaiter.Visible = false;
@@ -502,7 +502,7 @@ namespace QLQA.Model
             cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
             cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
             cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
-            cmd.Parameters.AddWithValue("@status", "Hold");
+            cmd.Parameters.AddWithValue("@status", "Lưu");
             cmd.Parameters.AddWithValue("@orderType", OrderType);
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text)); // Chỉ lưu dât cho giá trị nhà bếp sẽ cập nhật khi thanh toán hóa đơn
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));

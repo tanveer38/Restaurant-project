@@ -132,12 +132,8 @@
             this.cbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbRole.ItemHeight = 30;
             this.cbRole.Items.AddRange(new object[] {
-            "Thu ngan",
-            "Phuc vu",
-            "Nhan vien ve sinh",
-            "Quan ly",
-            "Nguoi giao hang",
-            "Khac"});
+            "Phục vụ",
+            "Giao hàng"});
             this.cbRole.Location = new System.Drawing.Point(52, 400);
             this.cbRole.Name = "cbRole";
             this.cbRole.Size = new System.Drawing.Size(283, 36);

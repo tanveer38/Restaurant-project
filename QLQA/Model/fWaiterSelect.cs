@@ -22,7 +22,7 @@ namespace QLQA.Model
 
         private void fWaiterSelect_Load(object sender, EventArgs e)
         {
-            string query = "Select * from staff where sRole = 'Phuc vu'";
+            string query = "Select * from staff where sRole = N'Phục vụ'";
 
             SqlCommand cmd = new SqlCommand(query, MainClass.con);
             DataTable dt = new DataTable();

@@ -27,7 +27,7 @@ namespace QLQA.View
         private void GetOrders()
         {
             flowLayoutPanel1.Controls.Clear();
-            string query1 = @"Select * from tblMain where status = 'Pending'";
+            string query1 = @"Select * from tblMain where status = N'Chờ'";
             SqlCommand cmd1 = new SqlCommand(query1, MainClass.con);
             DataTable dt1 = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd1);
@@ -74,10 +74,10 @@ namespace QLQA.View
                 lb4.Margin = new Padding(10, 5, 3, 0);
                 lb4.AutoSize = true;
 
-                lb1.Text = "Table : " + dt1.Rows[i]["TableName"].ToString();
-                lb2.Text = "Waiter Name : " + dt1.Rows[i]["WaiterName"].ToString();
-                lb3.Text = "Order Time : " + dt1.Rows[i]["aTime"].ToString();
-                lb4.Text = "Order Type : " + dt1.Rows[i]["orderType"].ToString();
+                lb1.Text = "Bàn : " + dt1.Rows[i]["TableName"].ToString();
+                lb2.Text = "Tên phục vụ : " + dt1.Rows[i]["WaiterName"].ToString();
+                lb3.Text = "Thời gian đặt hàng : " + dt1.Rows[i]["aTime"].ToString();
+                lb4.Text = "Kiểu đặt hàng : " + dt1.Rows[i]["orderType"].ToString();
 
                 p2.Controls.Add(lb1);
                 p2.Controls.Add(lb2);
@@ -120,7 +120,7 @@ namespace QLQA.View
                 b.Size = new Size(100, 35);
                 b.FillColor = Color.FromArgb(241, 85, 126);
                 b.Margin = new Padding(30, 5, 3, 10);
-                b.Text = "Complete";
+                b.Text = "Hoàn thành";
                 b.Tag = dt1.Rows[i]["MainID"].ToString(); // Lưu trữ id
 
                 b.Click += new EventHandler(b_click);
@@ -141,7 +141,7 @@ namespace QLQA.View
             guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
             if (guna2MessageDialog1.Show("Bạn có muốn xóa không?") == DialogResult.Yes)
             {
-                string query = @"Update tblMain set status = 'Complete' where MainID = @ID";
+                string query = @"Update tblMain set status = 'Hoàn thành' where MainID = @ID";
                 Hashtable ht = new Hashtable();
                 ht.Add("@ID", id);
 

@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExit = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblWaiter = new System.Windows.Forms.Label();
             this.lblTable = new System.Windows.Forms.Label();
             this.btnDin = new Guna.UI2.WinForms.Guna2TileButton();
@@ -41,6 +42,7 @@
             this.btnBill = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnHold = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnNew = new Guna.UI2.WinForms.Guna2TileButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCheckout = new Guna.UI2.WinForms.Guna2Button();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -57,18 +59,17 @@
             this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnExit = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblDriverName = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.btnHold);
             this.guna2Panel1.Controls.Add(this.btnExit);
             this.guna2Panel1.Controls.Add(this.lblWaiter);
             this.guna2Panel1.Controls.Add(this.lblTable);
@@ -76,8 +77,6 @@
             this.guna2Panel1.Controls.Add(this.btnTake);
             this.guna2Panel1.Controls.Add(this.btnDelivery);
             this.guna2Panel1.Controls.Add(this.btnKot);
-            this.guna2Panel1.Controls.Add(this.btnBill);
-            this.guna2Panel1.Controls.Add(this.btnHold);
             this.guna2Panel1.Controls.Add(this.btnNew);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -87,12 +86,27 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1221, 90);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.Image = global::QLQA.Properties.Resources.ShutDown;
+            this.btnExit.ImageRotate = 0F;
+            this.btnExit.Location = new System.Drawing.Point(1156, 21);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(44, 41);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnExit.TabIndex = 12;
+            this.btnExit.TabStop = false;
+            this.btnExit.UseTransparentBackground = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // lblWaiter
             // 
             this.lblWaiter.AutoSize = true;
             this.lblWaiter.BackColor = System.Drawing.Color.Transparent;
             this.lblWaiter.ForeColor = System.Drawing.Color.White;
-            this.lblWaiter.Location = new System.Drawing.Point(816, 52);
+            this.lblWaiter.Location = new System.Drawing.Point(986, 49);
             this.lblWaiter.Name = "lblWaiter";
             this.lblWaiter.Size = new System.Drawing.Size(59, 23);
             this.lblWaiter.TabIndex = 11;
@@ -104,7 +118,7 @@
             this.lblTable.AutoSize = true;
             this.lblTable.BackColor = System.Drawing.Color.Transparent;
             this.lblTable.ForeColor = System.Drawing.Color.White;
-            this.lblTable.Location = new System.Drawing.Point(816, 12);
+            this.lblTable.Location = new System.Drawing.Point(986, 9);
             this.lblTable.Name = "lblTable";
             this.lblTable.Size = new System.Drawing.Size(49, 23);
             this.lblTable.TabIndex = 10;
@@ -126,9 +140,9 @@
             this.btnDin.FillColor = System.Drawing.Color.Peru;
             this.btnDin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDin.ForeColor = System.Drawing.Color.White;
-            this.btnDin.Location = new System.Drawing.Point(700, 12);
+            this.btnDin.Location = new System.Drawing.Point(814, 12);
             this.btnDin.Name = "btnDin";
-            this.btnDin.Size = new System.Drawing.Size(81, 65);
+            this.btnDin.Size = new System.Drawing.Size(121, 65);
             this.btnDin.TabIndex = 9;
             this.btnDin.Text = "Ăn tại quán";
             this.btnDin.Click += new System.EventHandler(this.btnDin_Click);
@@ -148,11 +162,11 @@
             this.btnTake.FillColor = System.Drawing.Color.Peru;
             this.btnTake.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTake.ForeColor = System.Drawing.Color.White;
-            this.btnTake.Location = new System.Drawing.Point(599, 12);
+            this.btnTake.Location = new System.Drawing.Point(645, 12);
             this.btnTake.Name = "btnTake";
-            this.btnTake.Size = new System.Drawing.Size(81, 65);
+            this.btnTake.Size = new System.Drawing.Size(150, 65);
             this.btnTake.TabIndex = 8;
-            this.btnTake.Text = "Mua mang đi";
+            this.btnTake.Text = "Mua mang về";
             this.btnTake.Click += new System.EventHandler(this.btnTake_Click);
             // 
             // btnDelivery
@@ -170,9 +184,9 @@
             this.btnDelivery.FillColor = System.Drawing.Color.Peru;
             this.btnDelivery.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.ForeColor = System.Drawing.Color.White;
-            this.btnDelivery.Location = new System.Drawing.Point(503, 12);
+            this.btnDelivery.Location = new System.Drawing.Point(499, 14);
             this.btnDelivery.Name = "btnDelivery";
-            this.btnDelivery.Size = new System.Drawing.Size(81, 65);
+            this.btnDelivery.Size = new System.Drawing.Size(120, 65);
             this.btnDelivery.TabIndex = 7;
             this.btnDelivery.Text = "Vận chuyển";
             this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
@@ -189,14 +203,14 @@
             this.btnKot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnKot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnKot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKot.FillColor = System.Drawing.Color.Peru;
+            this.btnKot.FillColor = System.Drawing.Color.Tomato;
             this.btnKot.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKot.ForeColor = System.Drawing.Color.White;
-            this.btnKot.Location = new System.Drawing.Point(407, 12);
+            this.btnKot.Location = new System.Drawing.Point(366, 14);
             this.btnKot.Name = "btnKot";
-            this.btnKot.Size = new System.Drawing.Size(81, 65);
+            this.btnKot.Size = new System.Drawing.Size(101, 65);
             this.btnKot.TabIndex = 6;
-            this.btnKot.Text = "KOT";
+            this.btnKot.Text = "Đặt đơn";
             this.btnKot.Click += new System.EventHandler(this.btnKot_Click);
             // 
             // btnBill
@@ -214,11 +228,11 @@
             this.btnBill.FillColor = System.Drawing.Color.Peru;
             this.btnBill.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill.ForeColor = System.Drawing.Color.White;
-            this.btnBill.Location = new System.Drawing.Point(311, 12);
+            this.btnBill.Location = new System.Drawing.Point(12, 6);
             this.btnBill.Name = "btnBill";
-            this.btnBill.Size = new System.Drawing.Size(81, 65);
+            this.btnBill.Size = new System.Drawing.Size(218, 57);
             this.btnBill.TabIndex = 5;
-            this.btnBill.Text = "Bill List";
+            this.btnBill.Text = "Danh sách hóa đơn";
             this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnHold
@@ -236,11 +250,11 @@
             this.btnHold.FillColor = System.Drawing.Color.Peru;
             this.btnHold.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHold.ForeColor = System.Drawing.Color.White;
-            this.btnHold.Location = new System.Drawing.Point(216, 12);
+            this.btnHold.Location = new System.Drawing.Point(232, 16);
             this.btnHold.Name = "btnHold";
-            this.btnHold.Size = new System.Drawing.Size(81, 65);
+            this.btnHold.Size = new System.Drawing.Size(113, 63);
             this.btnHold.TabIndex = 4;
-            this.btnHold.Text = "Hold";
+            this.btnHold.Text = "Lưu";
             this.btnHold.Click += new System.EventHandler(this.btnHold_Click);
             // 
             // btnNew
@@ -258,18 +272,32 @@
             this.btnNew.FillColor = System.Drawing.Color.Peru;
             this.btnNew.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(121, 12);
+            this.btnNew.Location = new System.Drawing.Point(95, 14);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(81, 65);
+            this.btnNew.Size = new System.Drawing.Size(117, 65);
             this.btnNew.TabIndex = 3;
-            this.btnNew.Text = "New";
+            this.btnNew.Text = "Làm mới";
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::QLQA.Properties.Resources.pos2;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 14);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(68, 63);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.btnCheckout);
             this.guna2Panel2.Controls.Add(this.lblTotal);
             this.guna2Panel2.Controls.Add(this.label1);
+            this.guna2Panel2.Controls.Add(this.btnBill);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 569);
@@ -502,37 +530,9 @@
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Tìm kiếm ...";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(590, 48);
+            this.txtSearch.Size = new System.Drawing.Size(303, 48);
             this.txtSearch.TabIndex = 9;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.Image = global::QLQA.Properties.Resources.ShutDown;
-            this.btnExit.ImageRotate = 0F;
-            this.btnExit.Location = new System.Drawing.Point(1156, 21);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(44, 41);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 12;
-            this.btnExit.TabStop = false;
-            this.btnExit.UseTransparentBackground = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::QLQA.Properties.Resources.pos2;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(38, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(68, 63);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // lblDriverName
             // 
@@ -566,11 +566,11 @@
             this.Load += new System.EventHandler(this.fManage_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

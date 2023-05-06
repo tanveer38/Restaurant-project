@@ -28,7 +28,7 @@ namespace QLQA.Model
         private void LoadData()
         {
             string query = @"select MainID, TableName, WaiterName, orderType, status, total from 
-                            tblMain where status <> 'Pending' ";
+                            tblMain where status <> 'Chờ' ";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvtable);
