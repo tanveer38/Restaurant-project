@@ -39,10 +39,6 @@ namespace QLQA
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void fMain_Load(object sender, EventArgs e)
         {
@@ -50,41 +46,49 @@ namespace QLQA
             _obj = this;
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void btnHome_Click_1(object sender, EventArgs e)
         {
             AddControls(new fHome());
         }
 
-        private void btnCategory_Click(object sender, EventArgs e)
+        private void btnCategory_Click_1(object sender, EventArgs e)
         {
             AddControls(new fCategoryView());
         }
 
-        private void btnTable_Click(object sender, EventArgs e)
-        {
-            AddControls(new fTableView());
-        }
-
-        private void btnStaff_Click(object sender, EventArgs e)
-        {
-            AddControls(new fStaffView());
-        }
-
-        private void btnProduct_Click(object sender, EventArgs e)
+        private void btnProduct_Click_1(object sender, EventArgs e)
         {
             AddControls(new fProductView());
         }
 
-        private void btnPOS_Click(object sender, EventArgs e)
+        private void btnTable_Click_1(object sender, EventArgs e)
         {
-            fManage f = new fManage();
-            f.Show();
+            AddControls(new fTableView());
         }
 
-        private void btnKetchen_Click(object sender, EventArgs e)
+        private void btnStaff_Click_1(object sender, EventArgs e)
+        {
+            AddControls(new fStaffView());
+        }
+
+        private void btnPOS_Click_1(object sender, EventArgs e)
+        {
+            AddControls(new fManage());
+        }
+
+        private void btnKetchen_Click_1(object sender, EventArgs e)
         {
             AddControls(new fKitchenView());
+        }
 
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

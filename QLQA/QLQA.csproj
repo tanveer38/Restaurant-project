@@ -142,6 +142,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SampleAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,11 +262,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -435,6 +435,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-1000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-table-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pos-terminal-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tips-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gear-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-table %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-table %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pos-terminal-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tips-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gear-1001.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

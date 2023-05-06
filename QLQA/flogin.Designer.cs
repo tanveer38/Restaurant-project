@@ -233,7 +233,7 @@
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Gray;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Silver;
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(148)))), ((int)(((byte)(237)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(295, 3);
