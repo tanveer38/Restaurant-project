@@ -49,13 +49,9 @@
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
+            this.btnAdd.Location = new System.Drawing.Point(37, 85);
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(55, 55);
-
-            // 
-            // label2
-            // 
-            this.label2.Size = new System.Drawing.Size(236, 32);
-            this.label2.Text = "Danh sách sản phẩm";
+            this.btnAdd.Size = new System.Drawing.Size(45, 48);
             // 
             // guna2DataGridView1
             // 
@@ -100,7 +96,7 @@
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 35;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(829, 432);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(818, 506);
             this.guna2DataGridView1.TabIndex = 8;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -146,14 +142,14 @@
             // dgvName
             // 
             this.dgvName.FillWeight = 79.37956F;
-            this.dgvName.HeaderText = "Name";
+            this.dgvName.HeaderText = "Tên sản phẩm";
             this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 
             // dgvPrice
             // 
-            this.dgvPrice.HeaderText = "Price";
+            this.dgvPrice.HeaderText = "Giá tiền";
             this.dgvPrice.MinimumWidth = 6;
             this.dgvPrice.Name = "dgvPrice";
             this.dgvPrice.ReadOnly = true;
@@ -168,7 +164,7 @@
             // 
             // dgvcat
             // 
-            this.dgvcat.HeaderText = "Category";
+            this.dgvcat.HeaderText = "Danh mục";
             this.dgvcat.MinimumWidth = 6;
             this.dgvcat.Name = "dgvcat";
             this.dgvcat.ReadOnly = true;
@@ -178,7 +174,7 @@
             this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvedit.FillWeight = 50F;
             this.dgvedit.HeaderText = "";
-            this.dgvedit.Image = global::QLQA.Properties.Resources.edit1;
+            this.dgvedit.Image = global::QLQA.Properties.Resources.icons8_edit_961;
             this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvedit.MinimumWidth = 50;
             this.dgvedit.Name = "dgvedit";
@@ -190,7 +186,7 @@
             this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvdel.FillWeight = 50F;
             this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::QLQA.Properties.Resources.delete;
+            this.dgvdel.Image = global::QLQA.Properties.Resources.icons8_remove_961;
             this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvdel.MinimumWidth = 50;
             this.dgvdel.Name = "dgvdel";
@@ -201,17 +197,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 599);
+            this.ClientSize = new System.Drawing.Size(874, 673);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "fProductView";
             this.Text = "fProductView";
             this.Load += new System.EventHandler(this.fProductView_Load);
             this.Controls.SetChildIndex(this.btnAdd, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.guna2DataGridView1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -50,11 +50,6 @@
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(55, 55);
             // 
-            // label2
-            // 
-            this.label2.Size = new System.Drawing.Size(238, 32);
-            this.label2.Text = "Danh sách nhân viên";
-            // 
             // guna2DataGridView1
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
@@ -97,7 +92,7 @@
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 35;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(755, 418);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(818, 464);
             this.guna2DataGridView1.TabIndex = 7;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -126,7 +121,7 @@
             // 
             this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvSno.FillWeight = 70F;
-            this.dgvSno.HeaderText = "Sr#";
+            this.dgvSno.HeaderText = "STT";
             this.dgvSno.MinimumWidth = 70;
             this.dgvSno.Name = "dgvSno";
             this.dgvSno.ReadOnly = true;
@@ -143,21 +138,21 @@
             // dgvName
             // 
             this.dgvName.FillWeight = 79.37956F;
-            this.dgvName.HeaderText = "Name";
+            this.dgvName.HeaderText = "Tên nhân viên";
             this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 
             // dgvPhone
             // 
-            this.dgvPhone.HeaderText = "Phone";
+            this.dgvPhone.HeaderText = "Số điện thoại";
             this.dgvPhone.MinimumWidth = 6;
             this.dgvPhone.Name = "dgvPhone";
             this.dgvPhone.ReadOnly = true;
             // 
             // dgvRole
             // 
-            this.dgvRole.HeaderText = "Role";
+            this.dgvRole.HeaderText = "Vị trí";
             this.dgvRole.MinimumWidth = 6;
             this.dgvRole.Name = "dgvRole";
             this.dgvRole.ReadOnly = true;
@@ -167,7 +162,7 @@
             this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvedit.FillWeight = 50F;
             this.dgvedit.HeaderText = "";
-            this.dgvedit.Image = global::QLQA.Properties.Resources.edit1;
+            this.dgvedit.Image = global::QLQA.Properties.Resources.icons8_edit_962;
             this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvedit.MinimumWidth = 50;
             this.dgvedit.Name = "dgvedit";
@@ -179,7 +174,7 @@
             this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvdel.FillWeight = 50F;
             this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::QLQA.Properties.Resources.delete;
+            this.dgvdel.Image = global::QLQA.Properties.Resources.icons8_remove_962;
             this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvdel.MinimumWidth = 50;
             this.dgvdel.Name = "dgvdel";
@@ -190,17 +185,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 627);
+            this.ClientSize = new System.Drawing.Size(874, 673);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "fStaffView";
             this.Text = "fStaffView";
             this.Load += new System.EventHandler(this.fStaffView_Load);
             this.Controls.SetChildIndex(this.btnAdd, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.guna2DataGridView1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
