@@ -603,6 +603,16 @@ namespace QLQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_male_user_1002 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-male-user-1002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_pos_terminal_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-pos-terminal-100", resourceCulture);

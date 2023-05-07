@@ -30,6 +30,14 @@ namespace QLQA.Model
         public string customerName = "";
         public string customerPhone = "";
 
+        // Để truy cập form Main
+        static fMain _obj;
+        public static fMain Instance
+        {
+            get { if (_obj == null) { _obj = new fMain(); } return _obj; }
+
+        }
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -38,6 +46,8 @@ namespace QLQA.Model
 
         private void fManage_Load(object sender, EventArgs e)
         {
+            lblUserPos.Text = MainClass.USER;
+
             guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D;
             AddCategory();
 
@@ -228,8 +238,8 @@ namespace QLQA.Model
             if (f.txtName.Text != "") // Mua mang đi không có thông tin người giao hàng
             {
                 driverID = f.driverID;
-                lblDriverName.Text = "Tên khách hàng: " + f.txtName.Text
-                                    + "Số điện thoại: " + f.txtPhone.Text
+                lblDriverName.Text = "Tên khách hàng: " + f.txtName.Text + " - "
+                                    + "Số điện thoại: " + f.txtPhone.Text + " - "
                                     + "Người giao hàng: " + f.cbDriver.Text;
                 lblDriverName.Visible = true;
                 customerName = f.txtName.Text;
@@ -255,7 +265,7 @@ namespace QLQA.Model
             if (f.txtName.Text != "") // Mua mang đi không có thông tin người giao hàng
             {
                 driverID = f.driverID;
-                lblDriverName.Text = "Tên khách hàng: " + f.txtName.Text
+                lblDriverName.Text = "Tên khách hàng: " + f.txtName.Text + " - "
                                     + "Số điện thoại: " + f.txtPhone.Text;
                 lblDriverName.Visible = true;
                 customerName = f.txtName.Text;
