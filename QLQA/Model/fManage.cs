@@ -53,6 +53,7 @@ namespace QLQA.Model
 
             ProductPanel.Controls.Clear();
             LoadProducts();
+
         }
 
         private void AddCategory() 
@@ -208,9 +209,8 @@ namespace QLQA.Model
         //    return grandTotalString; // Return the grand total as a string
         //}
 
-        private void btnNew_Click(object sender, EventArgs e)
+        private void btnNew_Click_1(object sender, EventArgs e)
         {
-
             lblTable.Text = "";
             lblWaiter.Text = "";
             lblTable.Visible = false;
@@ -218,8 +218,8 @@ namespace QLQA.Model
             guna2DataGridView1.Rows.Clear();
             MainID = 0;
             lblTotal.Text = "00";
-
         }
+
 
         private void btnDelivery_Click_1(object sender, EventArgs e)
         {
@@ -309,9 +309,7 @@ namespace QLQA.Model
             }
         }
 
-
-
-        private void btnKot_Click(object sender, EventArgs e)
+        private void btnKot_Click_1(object sender, EventArgs e)
         {
             // Thêm thông tin filed vào table để lưu trữ thông tin bổ sung
 
@@ -334,7 +332,7 @@ namespace QLQA.Model
                         received = @received, change = @change where MainID = @ID";
             }
 
-    
+
 
             SqlCommand cmd = new SqlCommand(query1, MainClass.con);
             cmd.Parameters.AddWithValue("@ID", MainID);
@@ -353,7 +351,7 @@ namespace QLQA.Model
 
 
             if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
-            if(MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
+            if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
             if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
 
@@ -396,8 +394,8 @@ namespace QLQA.Model
             lblWaiter.Visible = false;
             lblTotal.Text = "00";
             lblDriverName.Text = "";
-
         }
+
 
         public int id = 0;
         private void btnBill_Click_1(object sender, EventArgs e)
@@ -469,7 +467,7 @@ namespace QLQA.Model
             GetTotal();
         }
 
-        private void btnCheckout_Click(object sender, EventArgs e)
+        private void btnCheckout_Click_1(object sender, EventArgs e)
         {
             fCheckout f = new fCheckout();
             f.MainID = id;
@@ -485,14 +483,14 @@ namespace QLQA.Model
             lblTotal.Text = "00";
         }
 
-        private void btnHold_Click(object sender, EventArgs e)
+        private void btnHold_Click_1(object sender, EventArgs e)
         {
             string query1 = ""; // Main table
             string query2 = ""; // Detail table
 
             int detailID = 0;
 
-            if(OrderType == "")
+            if (OrderType == "")
             {
                 guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
                 return;
@@ -575,11 +573,8 @@ namespace QLQA.Model
             lblDriverName.Text = "";
         }
 
-        private void lblWaiter_Click(object sender, EventArgs e)
-        {
 
-        }
 
-    
+
     }
 }

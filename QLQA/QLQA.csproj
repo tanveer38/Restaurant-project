@@ -577,5 +577,35 @@
   <ItemGroup>
     <None Include="Resources\icons8-male-user-1002.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paid-bill-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online-payment-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-shopping-cart-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online-payment-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-shopping-cart-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restart-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restart-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restart-1001.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
