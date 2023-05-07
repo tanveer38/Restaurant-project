@@ -390,18 +390,19 @@ namespace QLQA.Model
         }
 
         public int id = 0;
-        private void btnBill_Click(object sender, EventArgs e)
+        private void btnBill_Click_1(object sender, EventArgs e)
         {
             fBillList f = new fBillList();
             MainClass.BlurBackground(f);
 
-             if( f.MainID > 0)
-             {
+            if (f.MainID > 0)
+            {
                 id = f.MainID;
                 MainID = f.MainID;
                 LoadEntries();
-             }
+            }
         }
+
 
         private void LoadEntries()
         {
@@ -568,5 +569,7 @@ namespace QLQA.Model
         {
 
         }
+
+    
     }
 }
