@@ -108,7 +108,7 @@ namespace QLQA.View
                     lb5.AutoSize = true;
 
                     int no = j + 1;
-                    lb5.Text = "" + no + " " + dt2.Rows[j]["pName"].ToString() + " " + dt2.Rows[j]["qty"].ToString();
+                    lb5.Text = "#" + no + "  -  " + dt2.Rows[j]["pName"].ToString() + "  -  " + dt2.Rows[j]["qty"].ToString();
 
                     p1.Controls.Add(lb5);
                 }
