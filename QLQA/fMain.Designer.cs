@@ -71,7 +71,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(137, 846);
+            this.guna2Panel1.Size = new System.Drawing.Size(134, 867);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnSettings
@@ -100,7 +100,6 @@
             this.btnSettings.Size = new System.Drawing.Size(109, 81);
             this.btnSettings.TabIndex = 7;
             this.btnSettings.Text = "Cài đặt";
-
             // 
             // btnKetchen
             // 
@@ -325,7 +324,7 @@
             this.btnExit.FillColor = System.Drawing.Color.Transparent;
             this.btnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(148)))), ((int)(((byte)(237)))));
             this.btnExit.IconColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(1294, 3);
+            this.btnExit.Location = new System.Drawing.Point(1820, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(43, 31);
             this.btnExit.TabIndex = 3;
@@ -339,7 +338,7 @@
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(148)))), ((int)(((byte)(237)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1245, 3);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1758, 4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(43, 31);
             this.guna2ControlBox2.TabIndex = 4;
@@ -352,11 +351,10 @@
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(148)))), ((int)(((byte)(237)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1196, 3);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(1697, 4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(43, 31);
             this.guna2ControlBox3.TabIndex = 5;
-
             // 
             // lblUser
             // 
@@ -379,9 +377,9 @@
             this.MainTop.Controls.Add(this.guna2ControlBox2);
             this.MainTop.Controls.Add(this.btnExit);
             this.MainTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MainTop.Location = new System.Drawing.Point(137, 0);
+            this.MainTop.Location = new System.Drawing.Point(134, 0);
             this.MainTop.Name = "MainTop";
-            this.MainTop.Size = new System.Drawing.Size(1337, 71);
+            this.MainTop.Size = new System.Drawing.Size(1390, 139);
             this.MainTop.TabIndex = 3;
             // 
             // guna2CirclePictureBox1
@@ -402,9 +400,9 @@
             // 
             this.ControlsPanel.BackColor = System.Drawing.SystemColors.Control;
             this.ControlsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ControlsPanel.Location = new System.Drawing.Point(137, 71);
+            this.ControlsPanel.Location = new System.Drawing.Point(134, 139);
             this.ControlsPanel.Name = "ControlsPanel";
-            this.ControlsPanel.Size = new System.Drawing.Size(1337, 775);
+            this.ControlsPanel.Size = new System.Drawing.Size(1390, 728);
             this.ControlsPanel.TabIndex = 4;
             // 
             // fMain
@@ -412,7 +410,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1474, 846);
+            this.ClientSize = new System.Drawing.Size(1524, 867);
             this.Controls.Add(this.ControlsPanel);
             this.Controls.Add(this.MainTop);
             this.Controls.Add(this.guna2Panel1);

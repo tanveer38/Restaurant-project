@@ -38,7 +38,7 @@ namespace QLQA.Model
 
         private void fManage_Load(object sender, EventArgs e)
         {
-            guna2DataGridView1.BorderStyle = BorderStyle.FixedSingle;
+            guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D;
             AddCategory();
 
             ProductPanel.Controls.Clear();
