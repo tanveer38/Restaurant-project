@@ -607,5 +607,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-restart-1001.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-100 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-100 %281%292.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

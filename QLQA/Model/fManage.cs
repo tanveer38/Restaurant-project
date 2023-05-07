@@ -574,7 +574,5 @@ namespace QLQA.Model
         }
 
 
-
-
     }
 }

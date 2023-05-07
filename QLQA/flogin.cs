@@ -47,5 +47,7 @@ namespace QLQA
         {
             txtPass.UseSystemPasswordChar = true;
         }
+
+
     }
 }

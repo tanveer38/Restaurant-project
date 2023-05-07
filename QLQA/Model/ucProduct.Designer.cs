@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucProduct));
             this.lblName = new System.Windows.Forms.Label();
             this.guna2ShadowPanelValid = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.btnCheck = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2ShadowPanelValid.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImage)).BeginInit();
@@ -43,10 +43,10 @@
             // 
             // lblName
             // 
-            this.lblName.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(3, 0);
+            this.lblName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(1, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(150, 54);
+            this.lblName.Size = new System.Drawing.Size(155, 36);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Product Name";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,15 +65,6 @@
             this.guna2ShadowPanelValid.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2ShadowPanelValid.Size = new System.Drawing.Size(156, 174);
             this.guna2ShadowPanelValid.TabIndex = 2;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.lblName);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 120);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(156, 54);
-            this.guna2Panel1.TabIndex = 2;
             // 
             // btnCheck
             // 
@@ -94,6 +85,15 @@
             this.btnCheck.TabIndex = 3;
             this.btnCheck.Visible = false;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.lblName);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 138);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(156, 36);
+            this.guna2Panel1.TabIndex = 2;
+            // 
             // txtImage
             // 
             this.txtImage.BackColor = System.Drawing.Color.Transparent;
@@ -101,11 +101,11 @@
             this.txtImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtImage.Image = ((System.Drawing.Image)(resources.GetObject("txtImage.Image")));
             this.txtImage.ImageRotate = 0F;
-            this.txtImage.Location = new System.Drawing.Point(24, 19);
+            this.txtImage.Location = new System.Drawing.Point(7, 9);
             this.txtImage.Name = "txtImage";
             this.txtImage.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.txtImage.Size = new System.Drawing.Size(104, 95);
+            this.txtImage.Size = new System.Drawing.Size(146, 126);
             this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.txtImage.TabIndex = 1;
             this.txtImage.TabStop = false;
