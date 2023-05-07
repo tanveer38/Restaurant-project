@@ -379,7 +379,7 @@
             this.MainTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.MainTop.Location = new System.Drawing.Point(134, 0);
             this.MainTop.Name = "MainTop";
-            this.MainTop.Size = new System.Drawing.Size(1390, 139);
+            this.MainTop.Size = new System.Drawing.Size(1390, 79);
             this.MainTop.TabIndex = 3;
             // 
             // guna2CirclePictureBox1
@@ -400,9 +400,9 @@
             // 
             this.ControlsPanel.BackColor = System.Drawing.SystemColors.Control;
             this.ControlsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ControlsPanel.Location = new System.Drawing.Point(134, 139);
+            this.ControlsPanel.Location = new System.Drawing.Point(134, 79);
             this.ControlsPanel.Name = "ControlsPanel";
-            this.ControlsPanel.Size = new System.Drawing.Size(1390, 728);
+            this.ControlsPanel.Size = new System.Drawing.Size(1390, 788);
             this.ControlsPanel.TabIndex = 4;
             // 
             // fMain
