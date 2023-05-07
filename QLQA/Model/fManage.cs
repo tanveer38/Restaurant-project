@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -58,8 +60,9 @@ namespace QLQA.Model
                 foreach (DataRow row in dt.Rows)
                 {
                     Guna.UI2.WinForms.Guna2Button b = new Guna.UI2.WinForms.Guna2Button();
-                    b.FillColor = Color.FromArgb(50, 55, 89);
-                    b.Size = new Size(197, 61);
+                    b.FillColor = Color.FromArgb(127, 148, 237);
+                    b.Size = new Size(120, 50);
+                     b.BorderRadius = 6;
                     b.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
                     b.Text = row["catName"].ToString();
 
@@ -197,6 +200,7 @@ namespace QLQA.Model
 
         private void btnNew_Click(object sender, EventArgs e)
         {
+
             lblTable.Text = "";
             lblWaiter.Text = "";
             lblTable.Visible = false;
@@ -204,9 +208,10 @@ namespace QLQA.Model
             guna2DataGridView1.Rows.Clear();
             MainID = 0;
             lblTotal.Text = "00";
+
         }
 
-        private void btnDelivery_Click(object sender, EventArgs e)
+        private void btnDelivery_Click_1(object sender, EventArgs e)
         {
             lblTable.Text = "";
             lblWaiter.Text = "";
@@ -233,7 +238,7 @@ namespace QLQA.Model
             }
         }
 
-        private void btnTake_Click(object sender, EventArgs e)
+        private void btnTake_Click_1(object sender, EventArgs e)
         {
             lblTable.Text = "";
             lblWaiter.Text = "";
@@ -241,17 +246,17 @@ namespace QLQA.Model
             lblWaiter.Visible = false;
             OrderType = "Mua mang về";
 
-            fAddCustomer f =new fAddCustomer ();
+            fAddCustomer f = new fAddCustomer();
             f.mainID = MainID;
-            f.orderType= OrderType;
+            f.orderType = OrderType;
             MainClass.BlurBackground(f);
 
 
-            if(f.txtName.Text != "") // Mua mang đi không có thông tin người giao hàng
+            if (f.txtName.Text != "") // Mua mang đi không có thông tin người giao hàng
             {
                 driverID = f.driverID;
                 lblDriverName.Text = "Tên khách hàng: " + f.txtName.Text
-                                    + "Số điện thoại: " + f.txtPhone.Text;             
+                                    + "Số điện thoại: " + f.txtPhone.Text;
                 lblDriverName.Visible = true;
                 customerName = f.txtName.Text;
                 customerPhone = f.txtPhone.Text;
@@ -259,7 +264,7 @@ namespace QLQA.Model
             }
         }
 
-        private void btnDin_Click(object sender, EventArgs e)
+        private void btnDin_Click_1(object sender, EventArgs e)
         {
             OrderType = "Ăn tại quán";
             lblDriverName.Visible = false;
@@ -293,6 +298,8 @@ namespace QLQA.Model
 
             }
         }
+
+
 
         private void btnKot_Click(object sender, EventArgs e)
         {
@@ -555,6 +562,11 @@ namespace QLQA.Model
             lblWaiter.Visible = false;
             lblTotal.Text = "00";
             lblDriverName.Text = "";
+        }
+
+        private void lblWaiter_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

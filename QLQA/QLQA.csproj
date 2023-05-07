@@ -520,5 +520,47 @@
   <ItemGroup>
     <None Include="Resources\icons8-remove-963.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delivery-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delivery-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-take-away-food-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-take-away-food-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tableware-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tableware-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-602.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-603.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-604.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

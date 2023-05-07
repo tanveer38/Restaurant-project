@@ -26,6 +26,7 @@ namespace QLQA.Model
         public string PCategory { get; set; }
 
 
+
         public string PName
         {
             get { return lblName.Text; }
@@ -38,9 +39,23 @@ namespace QLQA.Model
             set { txtImage.Image = value; }
         }
 
+
         private void txtImage_Click(object sender, EventArgs e)
         {
             onSelect?.Invoke(this, e);
+
+
+        }
+
+        private void txtImage_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnCheck.Visible = true;
+        }
+
+        private void txtImage_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnCheck.Visible = false;
+
         }
     }
 }

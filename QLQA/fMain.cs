@@ -48,47 +48,52 @@ namespace QLQA
 
         private void btnHome_Click_1(object sender, EventArgs e)
         {
+            MainTop.Visible = true;
             AddControls(new fHome());
         }
 
         private void btnCategory_Click_1(object sender, EventArgs e)
         {
+            MainTop.Visible = true;
             AddControls(new fCategoryView());
         }
 
         private void btnProduct_Click_1(object sender, EventArgs e)
         {
+            MainTop.Visible = true;
             AddControls(new fProductView());
         }
 
         private void btnTable_Click_1(object sender, EventArgs e)
         {
+            MainTop.Visible = true;
             AddControls(new fTableView());
         }
 
         private void btnStaff_Click_1(object sender, EventArgs e)
         {
+            MainTop.Visible = true;
             AddControls(new fStaffView());
         }
 
         private void btnPOS_Click_1(object sender, EventArgs e)
         {
+            MainTop.Visible = false;
             AddControls(new fManage());
         }
 
         private void btnKetchen_Click_1(object sender, EventArgs e)
         {
+            MainTop.Visible = true;
             AddControls(new fKitchenView());
         }
 
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnExit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+
     }
 }

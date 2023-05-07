@@ -38,7 +38,7 @@
             // 
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Separator1.Location = new System.Drawing.Point(37, 139);
+            this.guna2Separator1.Location = new System.Drawing.Point(37, 78);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(818, 10);
             this.guna2Separator1.TabIndex = 4;
@@ -55,13 +55,14 @@
             // btnAdd
             // 
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
             this.btnAdd.Image = global::QLQA.Properties.Resources.add1;
             this.btnAdd.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAdd.ImageRotate = 0F;
             this.btnAdd.ImageSize = new System.Drawing.Size(55, 55);
             this.btnAdd.IndicateFocus = true;
-            this.btnAdd.Location = new System.Drawing.Point(37, 84);
+            this.btnAdd.Location = new System.Drawing.Point(37, 23);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(55, 55);
             this.btnAdd.Size = new System.Drawing.Size(46, 48);
@@ -83,7 +84,7 @@
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.IconLeft = global::QLQA.Properties.Resources.search1;
-            this.txtSearch.Location = new System.Drawing.Point(496, 84);
+            this.txtSearch.Location = new System.Drawing.Point(496, 23);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
