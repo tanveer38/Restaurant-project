@@ -38,10 +38,10 @@
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbDriver = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblDriver = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.guna2ShadowPanel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -53,7 +53,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(148)))), ((int)(((byte)(237)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(525, 131);
+            this.guna2Panel1.Size = new System.Drawing.Size(511, 131);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2ControlBox1
@@ -63,7 +63,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(148)))), ((int)(((byte)(237)))));
             this.guna2ControlBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(477, 3);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(463, 3);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 38);
             this.guna2ControlBox1.TabIndex = 0;
@@ -96,9 +96,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(64, 204);
+            this.label3.Location = new System.Drawing.Point(4, 164);
+            this.label3.Margin = new System.Windows.Forms.Padding(4);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 19);
+            this.label3.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(113, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Số điện thoại";
             // 
@@ -107,9 +109,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(64, 107);
+            this.label2.Location = new System.Drawing.Point(4, 81);
+            this.label2.Margin = new System.Windows.Forms.Padding(4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 19);
+            this.label2.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.label2.Size = new System.Drawing.Size(52, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Tên ";
             // 
@@ -126,13 +130,13 @@
             this.txtPhone.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(68, 130);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPhone.Location = new System.Drawing.Point(14, 108);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(14, 4, 4, 10);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "";
             this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(298, 43);
+            this.txtPhone.Size = new System.Drawing.Size(298, 42);
             this.txtPhone.TabIndex = 3;
             // 
             // txtName
@@ -148,13 +152,13 @@
             this.txtName.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(68, 227);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Location = new System.Drawing.Point(14, 191);
+            this.txtName.Margin = new System.Windows.Forms.Padding(14, 4, 4, 4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(298, 43);
+            this.txtName.Size = new System.Drawing.Size(298, 42);
             this.txtName.TabIndex = 2;
             // 
             // cbDriver
@@ -174,7 +178,8 @@
             "Nhan vien ve sinh",
             "Quan ly",
             "Khac"});
-            this.cbDriver.Location = new System.Drawing.Point(68, 54);
+            this.cbDriver.Location = new System.Drawing.Point(14, 31);
+            this.cbDriver.Margin = new System.Windows.Forms.Padding(14, 4, 4, 10);
             this.cbDriver.Name = "cbDriver";
             this.cbDriver.Size = new System.Drawing.Size(298, 36);
             this.cbDriver.TabIndex = 1;
@@ -185,36 +190,35 @@
             this.lblDriver.AutoSize = true;
             this.lblDriver.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDriver.ForeColor = System.Drawing.Color.Black;
-            this.lblDriver.Location = new System.Drawing.Point(64, 22);
+            this.lblDriver.Location = new System.Drawing.Point(4, 4);
+            this.lblDriver.Margin = new System.Windows.Forms.Padding(4);
             this.lblDriver.Name = "lblDriver";
-            this.lblDriver.Size = new System.Drawing.Size(120, 19);
+            this.lblDriver.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.lblDriver.Size = new System.Drawing.Size(134, 19);
             this.lblDriver.TabIndex = 4;
             this.lblDriver.Text = "Người giao hàng";
             // 
-            // guna2ShadowPanel1
+            // flowLayoutPanel1
             // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.lblDriver);
-            this.guna2ShadowPanel1.Controls.Add(this.txtName);
-            this.guna2ShadowPanel1.Controls.Add(this.cbDriver);
-            this.guna2ShadowPanel1.Controls.Add(this.txtPhone);
-            this.guna2ShadowPanel1.Controls.Add(this.label2);
-            this.guna2ShadowPanel1.Controls.Add(this.label3);
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(42, 147);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Radius = 10;
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(429, 302);
-            this.guna2ShadowPanel1.TabIndex = 2;
+            this.flowLayoutPanel1.Controls.Add(this.lblDriver);
+            this.flowLayoutPanel1.Controls.Add(this.cbDriver);
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.txtPhone);
+            this.flowLayoutPanel1.Controls.Add(this.label3);
+            this.flowLayoutPanel1.Controls.Add(this.txtName);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(88, 151);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(335, 244);
+            this.flowLayoutPanel1.TabIndex = 6;
             // 
             // fAddCustomer
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(230)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(525, 472);
-            this.Controls.Add(this.guna2ShadowPanel1);
+            this.ClientSize = new System.Drawing.Size(511, 413);
             this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fAddCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -222,8 +226,8 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.guna2ShadowPanel1.ResumeLayout(false);
-            this.guna2ShadowPanel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -239,6 +243,6 @@
         public Guna.UI2.WinForms.Guna2TextBox txtName;
         public Guna.UI2.WinForms.Guna2ComboBox cbDriver;
         private System.Windows.Forms.Label lblDriver;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
