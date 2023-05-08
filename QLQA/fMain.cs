@@ -56,12 +56,14 @@ namespace QLQA
         {
             MainTop.Visible = true;
             AddControls(new fCategoryView());
+
         }
 
         private void btnProduct_Click_1(object sender, EventArgs e)
         {
             MainTop.Visible = true;
             AddControls(new fProductView());
+
         }
 
         private void btnTable_Click_1(object sender, EventArgs e)
