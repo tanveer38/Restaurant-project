@@ -47,7 +47,7 @@ namespace QLQA.View
 
                 FlowLayoutPanel p2 = new FlowLayoutPanel();
                 p2 = new FlowLayoutPanel();
-                p2.BackColor = Color.FromArgb(50, 55, 89);
+                p2.BackColor = Color.FromArgb(127, 148, 237);
                 p2.AutoSize = true;
                 p2.Width = 230;
                 p2.Height = 125;
@@ -58,21 +58,25 @@ namespace QLQA.View
                 lb1.ForeColor = Color.White;
                 lb1.Margin = new Padding(10, 10, 3, 0);
                 lb1.AutoSize = true;
+                lb1.Font = new Font("Times New Roman", 12);
 
                 Label lb2 = new Label();
                 lb2.ForeColor = Color.White;
                 lb2.Margin = new Padding(10, 5, 3, 10);
                 lb2.AutoSize = true;
+                lb2.Font = new Font("Times New Roman", 12);
 
                 Label lb3 = new Label();
                 lb3.ForeColor = Color.White;
                 lb3.Margin = new Padding(10, 5, 3, 0);
                 lb3.AutoSize = true;
+                lb3.Font = new Font("Times New Roman", 12);
 
                 Label lb4 = new Label();
                 lb4.ForeColor = Color.White;
-                lb4.Margin = new Padding(10, 5, 3, 0);
+                lb4.Margin = new Padding(10, 5, 12,10);
                 lb4.AutoSize = true;
+                lb4.Font = new Font("Times New Roman", 12); 
 
                 lb1.Text = "Bàn : " + dt1.Rows[i]["TableName"].ToString();
                 lb2.Text = "Tên phục vụ : " + dt1.Rows[i]["WaiterName"].ToString();
@@ -108,6 +112,7 @@ namespace QLQA.View
                     lb5.AutoSize = true;
 
                     int no = j + 1;
+                    
                     lb5.Text = "#" + no + "  -  " + dt2.Rows[j]["pName"].ToString() + "  -  " + dt2.Rows[j]["qty"].ToString();
 
                     p1.Controls.Add(lb5);
@@ -118,8 +123,8 @@ namespace QLQA.View
                 Guna.UI2.WinForms.Guna2Button b = new Guna.UI2.WinForms.Guna2Button();
                 b.AutoRoundedCorners = true;
                 b.Size = new Size(100, 35);
-                b.FillColor = Color.FromArgb(241, 85, 126);
-                b.Margin = new Padding(30, 5, 3, 10);
+                b.FillColor = Color.SeaGreen;
+                b.Margin = new Padding(45, 10, 3, 10);
                 b.Text = "Hoàn thành";
                 b.Tag = dt1.Rows[i]["MainID"].ToString(); // Lưu trữ id
 

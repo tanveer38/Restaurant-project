@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace QLQA.Model
@@ -29,6 +30,8 @@ namespace QLQA.Model
         public int driverID = 0;
         public string customerName = "";
         public string customerPhone = "";
+        public string status = "";
+
 
         // Để truy cập form Main
         static fMain _obj;
@@ -318,6 +321,12 @@ namespace QLQA.Model
 
             int detailID = 0;
 
+            if (OrderType == "")
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
+                return;
+            }
+
             if (MainID == 0) // Insert
             {
                 query1 = @"Insert into tblMain Values(@aDate, @aTime, @TableName, @WaiterName, 
@@ -469,18 +478,29 @@ namespace QLQA.Model
 
         private void btnCheckout_Click_1(object sender, EventArgs e)
         {
-            fCheckout f = new fCheckout();
-            f.MainID = id;
-            f.amt = Convert.ToDouble(lblTotal.Text);
-            MainClass.BlurBackground(f);
 
-            MainID = 0;
-            guna2DataGridView1.Rows.Clear();
-            lblTable.Text = "";
-            lblWaiter.Text = "";
-            lblTable.Visible = false;
-            lblWaiter.Visible = false;
-            lblTotal.Text = "00";
+            if (OrderType == "")
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
+                return;
+            }
+            else if(MainID == id)
+            {
+                fCheckout f = new fCheckout();
+                f.MainID = id;
+                f.amt = Convert.ToDouble(lblTotal.Text);
+                MainClass.BlurBackground(f);
+
+                MainID = 0;
+                guna2DataGridView1.Rows.Clear();
+                lblTable.Text = "";
+                lblWaiter.Text = "";
+                lblTable.Visible = false;
+                lblWaiter.Visible = false;
+                lblTotal.Text = "00";
+            }
+
+      
         }
 
         private void btnHold_Click_1(object sender, EventArgs e)
