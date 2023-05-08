@@ -19,6 +19,8 @@ namespace QLQA.View
             InitializeComponent();
         }
 
+        public string OrderType = "";
+
         private void fKitchenView_Load(object sender, EventArgs e)
         {
             GetOrders();
@@ -32,6 +34,8 @@ namespace QLQA.View
             DataTable dt1 = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd1);
             da.Fill(dt1);
+
+
 
             FlowLayoutPanel p1;
 
@@ -78,10 +82,22 @@ namespace QLQA.View
                 lb4.AutoSize = true;
                 lb4.Font = new Font("Times New Roman", 12); 
 
-                lb1.Text = "Bàn : " + dt1.Rows[i]["TableName"].ToString();
-                lb2.Text = "Tên phục vụ : " + dt1.Rows[i]["WaiterName"].ToString();
-                lb3.Text = "Thời gian đặt hàng : " + dt1.Rows[i]["aTime"].ToString();
-                lb4.Text = "Kiểu đặt hàng : " + dt1.Rows[i]["orderType"].ToString();
+                if(dt1.Rows[i]["TableName"].ToString() != "" && dt1.Rows[i]["WaiterName"].ToString() != "")
+                {
+                    lb1.Text = "Bàn : " + dt1.Rows[i]["TableName"].ToString();
+                    lb2.Text = "Tên phục vụ : " + dt1.Rows[i]["WaiterName"].ToString();
+                    lb3.Text = "Thời gian đặt hàng : " + dt1.Rows[i]["aTime"].ToString();
+                    lb4.Text = "Kiểu đặt hàng : " + dt1.Rows[i]["orderType"].ToString();
+                }
+                else 
+                {
+                    lb1.Text = "Tên khách hàng : " + dt1.Rows[i]["custName"].ToString();
+                    lb2.Text = "Số khách hàng : " + dt1.Rows[i]["custPhone"].ToString();
+                    lb3.Text = "Thời gian đặt hàng : " + dt1.Rows[i]["aTime"].ToString();
+                    lb4.Text = "Kiểu đặt hàng : " + dt1.Rows[i]["orderType"].ToString();
+                }
+                
+     
 
                 p2.Controls.Add(lb1);
                 p2.Controls.Add(lb2);
