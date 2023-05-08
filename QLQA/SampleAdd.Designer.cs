@@ -45,7 +45,7 @@
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(148)))), ((int)(((byte)(237)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(906, 131);
@@ -63,11 +63,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(165, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 32);
+            this.label1.Size = new System.Drawing.Size(102, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Header";
             // 
@@ -76,7 +76,7 @@
             this.guna2Panel2.Controls.Add(this.btnClose);
             this.guna2Panel2.Controls.Add(this.btnSave);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.FillColor = System.Drawing.Color.Gainsboro;
+            this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 502);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(906, 83);
@@ -85,41 +85,51 @@
             // btnClose
             // 
             this.btnClose.AutoRoundedCorners = true;
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.BorderRadius = 28;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.DimGray;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.FillColor = System.Drawing.Color.DarkGray;
+            this.btnClose.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClose.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = global::QLQA.Properties.Resources.icons8_close_100;
             this.btnClose.Location = new System.Drawing.Point(226, 12);
             this.btnClose.Name = "btnClose";
+            this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnClose.Size = new System.Drawing.Size(143, 59);
             this.btnClose.TabIndex = 1;
             this.btnClose.Tag = "";
             this.btnClose.Text = "Đóng";
+            this.btnClose.TextOffset = new System.Drawing.Point(0, 1);
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
             this.btnSave.AutoRoundedCorners = true;
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.BorderRadius = 28;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSave.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::QLQA.Properties.Resources.icons8_save_100__1_3;
             this.btnSave.Location = new System.Drawing.Point(42, 12);
             this.btnSave.Name = "btnSave";
+            this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSave.Size = new System.Drawing.Size(143, 59);
             this.btnSave.TabIndex = 0;
             this.btnSave.Tag = "";
             this.btnSave.Text = "Lưu";
+            this.btnSave.TextOffset = new System.Drawing.Point(0, 1);
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // guna2MessageDialog1
@@ -134,7 +144,7 @@
             // SampleAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(230)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(906, 585);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);

@@ -616,5 +616,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-save-100 %281%292.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-100 %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tips-1006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-964.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
