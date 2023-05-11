@@ -795,6 +795,9 @@
       <DependentUpon>DB.edmx</DependentUpon>
       <LastGenOutput>DB.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\BG1.png" />
+    <None Include="Resources\res2.jpg" />
+    <None Include="Resources\iconMain1.png" />
     <None Include="Resources\icons8-view-96.png" />
   </ItemGroup>
   <ItemGroup>

@@ -133,6 +133,16 @@ namespace QLQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BG1 {
+            get {
+                object obj = ResourceManager.GetObject("BG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BillList {
             get {
                 object obj = ResourceManager.GetObject("BillList", resourceCulture);
@@ -386,6 +396,16 @@ namespace QLQA.Properties {
         internal static System.Drawing.Bitmap iconMain {
             get {
                 object obj = ResourceManager.GetObject("iconMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconMain1 {
+            get {
+                object obj = ResourceManager.GetObject("iconMain1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1336,6 +1356,16 @@ namespace QLQA.Properties {
         internal static System.Drawing.Bitmap res1 {
             get {
                 object obj = ResourceManager.GetObject("res1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap res2 {
+            get {
+                object obj = ResourceManager.GetObject("res2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

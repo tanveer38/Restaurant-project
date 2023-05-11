@@ -44,8 +44,8 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(226, 32);
-            this.label1.Text = "Chi tiết sản phẩm";
+            this.label1.Size = new System.Drawing.Size(199, 32);
+            this.label1.Text = "Chi tiết món ăn";
             // 
             // pictureBox1
             // 

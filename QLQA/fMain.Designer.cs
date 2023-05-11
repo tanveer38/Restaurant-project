@@ -79,6 +79,9 @@
             // 
             this.btnStatis.BackColor = System.Drawing.Color.Transparent;
             this.btnStatis.BorderRadius = 10;
+            this.btnStatis.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnStatis.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnStatis.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnStatis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStatis.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnStatis.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -106,6 +109,9 @@
             // 
             this.btnKetchen.BackColor = System.Drawing.Color.Transparent;
             this.btnKetchen.BorderRadius = 10;
+            this.btnKetchen.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnKetchen.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnKetchen.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnKetchen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKetchen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnKetchen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -134,6 +140,9 @@
             // 
             this.btnPOS.BackColor = System.Drawing.Color.Transparent;
             this.btnPOS.BorderRadius = 10;
+            this.btnPOS.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPOS.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnPOS.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnPOS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPOS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPOS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -162,6 +171,9 @@
             // 
             this.btnStaff.BackColor = System.Drawing.Color.Transparent;
             this.btnStaff.BorderRadius = 10;
+            this.btnStaff.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnStaff.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnStaff.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -190,6 +202,9 @@
             // 
             this.btnTable.BackColor = System.Drawing.Color.Transparent;
             this.btnTable.BorderRadius = 10;
+            this.btnTable.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnTable.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnTable.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnTable.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -218,6 +233,9 @@
             // 
             this.btnProduct.BackColor = System.Drawing.Color.Transparent;
             this.btnProduct.BorderRadius = 10;
+            this.btnProduct.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnProduct.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnProduct.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -246,6 +264,9 @@
             // 
             this.btnCategory.BackColor = System.Drawing.Color.Transparent;
             this.btnCategory.BorderRadius = 10;
+            this.btnCategory.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnCategory.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnCategory.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -287,6 +308,9 @@
             // 
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.BorderRadius = 10;
+            this.btnHome.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnHome.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnHome.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
