@@ -76,3 +76,15 @@ D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.exe
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.pdb
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.Model.fCheckout.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.Model.fAddCustomer.resources
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fPrint.resources
+D:\C#\QLQA-Project\QLQA\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\CrystalDecisions.Shared.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\log4net.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\log4net.xml
+D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.xml
+D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.SqlServer.xml

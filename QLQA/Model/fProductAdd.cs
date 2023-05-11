@@ -58,7 +58,12 @@ namespace QLQA.Model
         {
             string query = "";
 
-            if (id == 0) // Insert
+            if (txtName.Text.Equals(""))
+            {
+                guna2MessageDialog1.Show("Yêu cầu nhập đầy đủ thông tin");
+                return;
+            }
+            else if (id == 0) // Insert
             {
                 query = "Insert into products Values(@Name, @price, @cat, @img)";
             }

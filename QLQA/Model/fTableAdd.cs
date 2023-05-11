@@ -24,6 +24,11 @@ namespace QLQA.Model
         {
             string query = "";
 
+            if (txtName.Text.Equals(""))
+            {
+                guna2MessageDialog1.Show("Yêu cầu nhập đầy đủ thông tin");
+                return;
+            }
             if (id == 0) // Insert
             {
                 query = "Insert into tables Values(@Name)";

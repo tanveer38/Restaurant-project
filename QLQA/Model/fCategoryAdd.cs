@@ -23,16 +23,26 @@ namespace QLQA.Model
         public override void btnSave_Click(object sender, EventArgs e)
         {
             string query = "";
+           
 
-            if(id == 0) // Insert
+            if (txtName.Text.Equals(""))
             {
-                query = "Insert into category Values(@Name)";
+                guna2MessageDialog1.Show("Yêu cầu nhập đầy đủ thông tin");
+                return;
             }
             else
             {
-                query = "Update category Set catName = @Name where catID = @id";
+                if (id == 0) // Insert
+                {
+                    query = "Insert into category Values(@Name)";
+                }
+                else
+                {
+                    query = "Update category Set catName = @Name where catID = @id";
 
+                }
             }
+
             Hashtable ht = new Hashtable();
             ht.Add("@id", id);
             ht.Add("@Name", txtName.Text);

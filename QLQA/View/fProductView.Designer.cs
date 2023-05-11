@@ -143,7 +143,7 @@
             // dgvName
             // 
             this.dgvName.FillWeight = 79.37956F;
-            this.dgvName.HeaderText = "Tên sản phẩm";
+            this.dgvName.HeaderText = "Tên món ăn";
             this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;

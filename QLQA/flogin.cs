@@ -20,8 +20,14 @@ namespace QLQA
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
             // Tạo database và bảng users
-            if(MainClass.IsValidUser(txtUser.Text, txtPass.Text) == false )
+            if (txtUser.Text == "" || txtPass.Text == "")
+            {
+                guna2MessageDialog1.Show("Vui lòng nhập đầy đủ thông tin");
+                return;
+            }
+            else if (MainClass.IsValidUser(txtUser.Text, txtPass.Text) == false )
             {
                 guna2MessageDialog1.Show("Sai tài khoản hoặc mật khẩu");
                 return;

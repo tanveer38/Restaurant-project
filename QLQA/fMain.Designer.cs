@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnSettings = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btnStatis = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnKetchen = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnPOS = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnStaff = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -58,7 +58,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
-            this.guna2Panel1.Controls.Add(this.btnSettings);
+            this.guna2Panel1.Controls.Add(this.btnStatis);
             this.guna2Panel1.Controls.Add(this.btnKetchen);
             this.guna2Panel1.Controls.Add(this.btnPOS);
             this.guna2Panel1.Controls.Add(this.btnStaff);
@@ -75,32 +75,32 @@
             this.guna2Panel1.Size = new System.Drawing.Size(134, 867);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // btnSettings
+            // btnStatis
             // 
-            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
-            this.btnSettings.BorderRadius = 10;
-            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSettings.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSettings.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSettings.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSettings.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSettings.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSettings.FillColor = System.Drawing.Color.Transparent;
-            this.btnSettings.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnSettings.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.Gray;
-            this.btnSettings.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnSettings.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
-            this.btnSettings.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
-            this.btnSettings.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.HoverState.Image = global::QLQA.Properties.Resources.icons8_gear_1001;
-            this.btnSettings.Image = global::QLQA.Properties.Resources.icons8_gear_100;
-            this.btnSettings.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnSettings.Location = new System.Drawing.Point(12, 721);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(109, 81);
-            this.btnSettings.TabIndex = 7;
-            this.btnSettings.Text = "Cài đặt";
+            this.btnStatis.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatis.BorderRadius = 10;
+            this.btnStatis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStatis.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStatis.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStatis.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStatis.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStatis.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStatis.FillColor = System.Drawing.Color.Transparent;
+            this.btnStatis.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnStatis.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatis.ForeColor = System.Drawing.Color.Gray;
+            this.btnStatis.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnStatis.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
+            this.btnStatis.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
+            this.btnStatis.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnStatis.HoverState.Image = global::QLQA.Properties.Resources.icons8_gear_1001;
+            this.btnStatis.Image = global::QLQA.Properties.Resources.icons8_gear_100;
+            this.btnStatis.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnStatis.Location = new System.Drawing.Point(12, 721);
+            this.btnStatis.Name = "btnStatis";
+            this.btnStatis.Size = new System.Drawing.Size(109, 81);
+            this.btnStatis.TabIndex = 7;
+            this.btnStatis.Text = "Thống kê";
             // 
             // btnKetchen
             // 
@@ -239,7 +239,7 @@
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(109, 81);
             this.btnProduct.TabIndex = 2;
-            this.btnProduct.Text = "Sản phẩm";
+            this.btnProduct.Text = "Món ăn";
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click_1);
             // 
             // btnCategory
@@ -450,7 +450,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnHome;
-        private Guna.UI2.WinForms.Guna2GradientTileButton btnSettings;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnStatis;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnKetchen;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnPOS;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnStaff;
