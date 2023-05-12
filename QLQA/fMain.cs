@@ -91,11 +91,15 @@ namespace QLQA
         }
 
 
+        private void btnStatis_Click(object sender, EventArgs e)
+        {
+            MainTop.Visible = true;
+            AddControls(new fStatis());
+        }
+
         private void btnExit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-
     }
 }

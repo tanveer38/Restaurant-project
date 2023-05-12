@@ -104,6 +104,7 @@
             this.btnStatis.Size = new System.Drawing.Size(109, 81);
             this.btnStatis.TabIndex = 7;
             this.btnStatis.Text = "Thống kê";
+            this.btnStatis.Click += new System.EventHandler(this.btnStatis_Click);
             // 
             // btnKetchen
             // 

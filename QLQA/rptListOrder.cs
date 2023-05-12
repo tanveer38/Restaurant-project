@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLQA.Reports {
+namespace QLQA {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace QLQA.Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rptProductList : ReportClass {
+    public class rptListOrder : ReportClass {
         
-        public rptProductList() {
+        public rptListOrder() {
         }
         
         public override string ResourceName {
             get {
-                return "rptProductList.rpt";
+                return "rptListOrder.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace QLQA.Reports {
         
         public override string FullResourceName {
             get {
-                return "QLQA.Reports.rptProductList.rpt";
+                return "QLQA.rptListOrder.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace QLQA.Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrptProductList : Component, ICachedReport {
+    public class CachedrptListOrder : Component, ICachedReport {
         
-        public CachedrptProductList() {
+        public CachedrptListOrder() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace QLQA.Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rptProductList rpt = new rptProductList();
+            rptListOrder rpt = new rptListOrder();
             rpt.Site = this.Site;
             return rpt;
         }
