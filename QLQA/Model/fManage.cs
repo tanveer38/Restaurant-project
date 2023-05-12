@@ -326,19 +326,23 @@ namespace QLQA.Model
                 guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
                 return;
             }
-
-            if (MainID == 0) // Insert
+            else 
             {
-                query1 = @"Insert into tblMain Values(@aDate, @aTime, @TableName, @WaiterName, 
+                if (MainID == 0) // Insert
+                {
+                    query1 = @"Insert into tblMain Values(@aDate, @aTime, @TableName, @WaiterName, 
                             @status, @orderType, @total, @received, @change, @driverID, @custName, @custPhone);
                                 Select SCOPE_IDENTITY()";
-                // Dòng nhận giá trị id gân đây
+                    // Dòng nhận giá trị id gân đây
 
-            }
-            else // Update
-            {
-                query1 = @"Update tblMain Set status = @status, total = @total, 
+                }
+                else // Update
+                {
+                    query1 = @"Update tblMain Set status = @status, total = @total, 
                         received = @received, change = @change where MainID = @ID";
+
+                }
+
             }
 
 
@@ -479,12 +483,7 @@ namespace QLQA.Model
         private void btnCheckout_Click_1(object sender, EventArgs e)
         {
 
-            if (OrderType == "")
-            {
-                guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
-                return;
-            }
-            else if(MainID == id)
+            if(MainID == id)
             {
                 fCheckout f = new fCheckout();
                 f.MainID = id;
@@ -499,8 +498,20 @@ namespace QLQA.Model
                 lblWaiter.Visible = false;
                 lblTotal.Text = "00";
             }
+            else
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
+                return;
+            }
 
-      
+            btnDelivery.FillColor = Color.Transparent;
+            btnDelivery.FillColor2 = Color.Transparent;
+
+            btnTake.FillColor = Color.Transparent;
+            btnTake.FillColor2 = Color.Transparent;
+
+            btnDin.FillColor = Color.Transparent;
+            btnDin.FillColor2 = Color.Transparent;
         }
 
         private void btnHold_Click_1(object sender, EventArgs e)

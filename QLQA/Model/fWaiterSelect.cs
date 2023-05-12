@@ -35,7 +35,8 @@ namespace QLQA.Model
                 b.Text = row["sName"].ToString();
                 b.Width = 150;
                 b.Height = 50;
-                b.FillColor = Color.FromArgb(241, 85, 126);
+                b.Cursor = Cursors.Hand;
+                b.FillColor = Color.SeaGreen;
                 b.HoverState.FillColor = Color.FromArgb(50, 55, 89);
 
                 // Sự kiện click
