@@ -20,26 +20,39 @@ namespace QLQA
             InitializeComponent();
         }
 
-        void FillChart()
-        {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select aDate ,total from tblMain where status = N'Đã thanh toán'", con);
-            da.Fill(dt);
-            chart1.DataSource= dt;
-            con.Close();
+        //void FillChart()
+        //{
+        //    SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
+        //    DataTable dt = new DataTable();
+        //    con.Open();
+        //    SqlDataAdapter da = new SqlDataAdapter("select aDate ,total from tblMain where status = N'Đã thanh toán'", con);
+        //    da.Fill(dt);
+        //    chart1.DataSource= dt;
+        //    con.Close();
 
-            chart1.Series["total"].XValueMember = "aDate";
-            chart1.Series["total"].YValueMembers = "total";
-            chart1.Titles.Add("Monthly Profit");
-        }
+        //    chart1.Series["total"].XValueMember = "aDate";
+        //    chart1.Series["total"].YValueMembers = "total";
+        //    chart1.Titles.Add("Monthly Profit");
+        //}
 
         private void fHome_Load(object sender, EventArgs e)
         {
-            FillChart();
+            //FillChart();
 
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
+            SqlDataAdapter da = new SqlDataAdapter("select Month(aDate) as months ,SUM(total) as total from tblMain where status = N'Đã thanh toán' group by Month(aDate)", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            chart1.DataSource= dt;
+
+            chart1.ChartAreas["ChartArea1"].AxisX.Title = "Ngày";
+            chart1.ChartAreas["ChartArea1"].AxisX.Title = "Tổng số tiền";
+     
+
+            chart1.Series["Tổng tiền"].XValueMember = "months";
+            chart1.Series["Tổng tiền"].YValueMembers = "total";
+
+
             con.Open();
 
             SqlCommand cmd1 = new SqlCommand("select Count(*) from category", con);

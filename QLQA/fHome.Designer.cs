@@ -186,6 +186,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.guna2GradientPanel3);
             this.panel1.Controls.Add(this.guna2GradientPanel2);
             this.panel1.Controls.Add(this.guna2GradientPanel1);
@@ -276,18 +277,21 @@
             // 
             // chart1
             // 
-            chartArea1.AxisX.Interval = 1D;
+            this.chart1.BackColor = System.Drawing.Color.Transparent;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(116, 305);
+            this.chart1.Location = new System.Drawing.Point(0, 305);
             this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series1.Legend = "Legend1";
-            series1.Name = "total";
+            series1.Name = "Tổng tiền";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1188, 407);
+            this.chart1.Size = new System.Drawing.Size(1751, 694);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
             // 
@@ -295,7 +299,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1401, 799);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.panel1);
