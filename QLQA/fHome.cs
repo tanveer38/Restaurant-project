@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace QLQA
 {
@@ -18,8 +20,25 @@ namespace QLQA
             InitializeComponent();
         }
 
+        void FillChart()
+        {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter("select aDate ,total from tblMain where status = N'Đã thanh toán'", con);
+            da.Fill(dt);
+            chart1.DataSource= dt;
+            con.Close();
+
+            chart1.Series["total"].XValueMember = "aDate";
+            chart1.Series["total"].YValueMembers = "total";
+            chart1.Titles.Add("Monthly Profit");
+        }
+
         private void fHome_Load(object sender, EventArgs e)
         {
+            FillChart();
+
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
             con.Open();
 
