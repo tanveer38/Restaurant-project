@@ -17,6 +17,13 @@ namespace QLQA
         public fMain()
         {
             InitializeComponent();
+            lblTime.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToLongTimeString();
         }
 
         // Để truy cập form Main
@@ -36,9 +43,7 @@ namespace QLQA
             ControlsPanel.Controls.Add(f);
             f.Show();
 
-
         }
-
 
         private void fMain_Load(object sender, EventArgs e)
         {
@@ -101,5 +106,7 @@ namespace QLQA
         {
             Application.Exit();
         }
+
+
     }
 }
