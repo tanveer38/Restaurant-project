@@ -40,5 +40,11 @@ namespace QLQA
             sr.SetDataSource(s.Tables["table"]);
             crystalReportViewer1.ReportSource = sr;
         }
+
+        private void btnDisplayProduct_Click(object sender, EventArgs e)
+        {
+            fPrintProduct f = new fPrintProduct();
+            f.ShowDialog();
+        }
     }
 }
