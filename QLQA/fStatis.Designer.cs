@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExcel = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
             this.dtToDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtFromDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,7 +39,6 @@
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnDisplayProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -45,6 +46,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnExcel);
             this.panel1.Controls.Add(this.btnPrint);
             this.panel1.Controls.Add(this.dtToDate);
             this.panel1.Controls.Add(this.dtFromDate);
@@ -55,6 +57,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(949, 79);
             this.panel1.TabIndex = 0;
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcel.BorderRadius = 10;
+            this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcel.FillColor = System.Drawing.Color.Peru;
+            this.btnExcel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.ForeColor = System.Drawing.Color.White;
+            this.btnExcel.Image = global::QLQA.Properties.Resources.icons8_print_100;
+            this.btnExcel.Location = new System.Drawing.Point(754, 19);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(123, 45);
+            this.btnExcel.TabIndex = 5;
+            this.btnExcel.Text = "Excel";
+            this.btnExcel.TextOffset = new System.Drawing.Point(2, 0);
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BorderRadius = 10;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPrint.FillColor = System.Drawing.Color.Peru;
+            this.btnPrint.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
+            this.btnPrint.Image = global::QLQA.Properties.Resources.icons8_print_100;
+            this.btnPrint.Location = new System.Drawing.Point(594, 19);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(123, 45);
+            this.btnPrint.TabIndex = 4;
+            this.btnPrint.Text = "IN";
+            this.btnPrint.TextOffset = new System.Drawing.Point(2, 0);
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // dtToDate
             // 
@@ -67,7 +111,7 @@
             this.dtToDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtToDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtToDate.Name = "dtToDate";
-            this.dtToDate.Size = new System.Drawing.Size(149, 36);
+            this.dtToDate.Size = new System.Drawing.Size(150, 36);
             this.dtToDate.TabIndex = 3;
             this.dtToDate.Value = new System.DateTime(2023, 5, 13, 0, 31, 23, 518);
             // 
@@ -82,7 +126,7 @@
             this.dtFromDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtFromDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtFromDate.Name = "dtFromDate";
-            this.dtFromDate.Size = new System.Drawing.Size(149, 36);
+            this.dtFromDate.Size = new System.Drawing.Size(150, 36);
             this.dtFromDate.TabIndex = 2;
             this.dtFromDate.Value = new System.DateTime(2023, 5, 13, 0, 31, 15, 757);
             // 
@@ -150,32 +194,13 @@
             this.btnDisplayProduct.ForeColor = System.Drawing.Color.White;
             this.btnDisplayProduct.Image = global::QLQA.Properties.Resources.icons8_tableware_100__1_1;
             this.btnDisplayProduct.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnDisplayProduct.Location = new System.Drawing.Point(51, 10);
+            this.btnDisplayProduct.Location = new System.Drawing.Point(68, 10);
             this.btnDisplayProduct.Name = "btnDisplayProduct";
-            this.btnDisplayProduct.Size = new System.Drawing.Size(152, 45);
+            this.btnDisplayProduct.Size = new System.Drawing.Size(135, 48);
             this.btnDisplayProduct.TabIndex = 0;
             this.btnDisplayProduct.Text = "Món ăn";
             this.btnDisplayProduct.TextOffset = new System.Drawing.Point(2, 0);
             this.btnDisplayProduct.Click += new System.EventHandler(this.btnDisplayProduct_Click);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BorderRadius = 10;
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPrint.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Image = global::QLQA.Properties.Resources.icons8_print_100;
-            this.btnPrint.Location = new System.Drawing.Point(577, 21);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(140, 45);
-            this.btnPrint.TabIndex = 4;
-            this.btnPrint.Text = "IN";
-            this.btnPrint.TextOffset = new System.Drawing.Point(2, 0);
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // fStatis
             // 
@@ -209,5 +234,6 @@
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button btnDisplayProduct;
+        private Guna.UI2.WinForms.Guna2Button btnExcel;
     }
 }

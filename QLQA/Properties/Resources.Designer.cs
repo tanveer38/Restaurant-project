@@ -463,6 +463,16 @@ namespace QLQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_customer_641 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-customer-641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_delivery_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-delivery-100", resourceCulture);
@@ -996,6 +1006,16 @@ namespace QLQA.Properties {
         internal static System.Drawing.Bitmap icons8_save_100__1_3 {
             get {
                 object obj = ResourceManager.GetObject("icons8-save-100 (1)3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_100__1_4 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-save-100 (1)4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

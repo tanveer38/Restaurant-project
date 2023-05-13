@@ -115,7 +115,6 @@
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
@@ -126,6 +125,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fExportOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExportOrder.Designer.cs">
+      <DependentUpon>fExportOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="fHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +235,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="QLQADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLQADataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="rptListOrder.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -284,6 +294,9 @@
     <Compile Include="View\fTableView.Designer.cs">
       <DependentUpon>fTableView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fExportOrder.resx">
+      <DependentUpon>fExportOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fHome.resx">
       <DependentUpon>fHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -381,6 +394,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLQADataSet.xsc">
+      <DependentUpon>QLQADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLQADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLQADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLQADataSet.xss">
+      <DependentUpon>QLQADataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Account.png" />
   </ItemGroup>
   <ItemGroup>
@@ -788,6 +812,41 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-print-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-100 %281%294.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

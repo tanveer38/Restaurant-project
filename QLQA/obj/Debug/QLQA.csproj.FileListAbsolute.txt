@@ -89,3 +89,5 @@ D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.xml
 D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.SqlServer.xml
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fStatis.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fPrintProduct.resources
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fExportOrder.resources
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.csproj.ResolveComReference.cache

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPrintProduct = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.btnPrintProduct = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +44,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(999, 70);
             this.panel1.TabIndex = 0;
+            // 
+            // btnPrintProduct
+            // 
+            this.btnPrintProduct.BorderRadius = 10;
+            this.btnPrintProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrintProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrintProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrintProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPrintProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPrintProduct.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintProduct.ForeColor = System.Drawing.Color.White;
+            this.btnPrintProduct.Image = global::QLQA.Properties.Resources.icons8_print_1001;
+            this.btnPrintProduct.Location = new System.Drawing.Point(56, 13);
+            this.btnPrintProduct.Name = "btnPrintProduct";
+            this.btnPrintProduct.Size = new System.Drawing.Size(135, 45);
+            this.btnPrintProduct.TabIndex = 0;
+            this.btnPrintProduct.Text = "In";
+            this.btnPrintProduct.TextOffset = new System.Drawing.Point(2, 0);
+            this.btnPrintProduct.Click += new System.EventHandler(this.btnPrintProduct_Click);
             // 
             // panel2
             // 
@@ -66,24 +85,6 @@
             this.crystalReportViewer1.Size = new System.Drawing.Size(999, 504);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            // 
-            // btnPrintProduct
-            // 
-            this.btnPrintProduct.BorderRadius = 10;
-            this.btnPrintProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPrintProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPrintProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPrintProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPrintProduct.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrintProduct.ForeColor = System.Drawing.Color.White;
-            this.btnPrintProduct.Image = global::QLQA.Properties.Resources.icons8_print_1001;
-            this.btnPrintProduct.Location = new System.Drawing.Point(56, 13);
-            this.btnPrintProduct.Name = "btnPrintProduct";
-            this.btnPrintProduct.Size = new System.Drawing.Size(135, 45);
-            this.btnPrintProduct.TabIndex = 0;
-            this.btnPrintProduct.Text = "In";
-            this.btnPrintProduct.TextOffset = new System.Drawing.Point(2, 0);
-            this.btnPrintProduct.Click += new System.EventHandler(this.btnPrintProduct_Click);
             // 
             // fPrintProduct
             // 

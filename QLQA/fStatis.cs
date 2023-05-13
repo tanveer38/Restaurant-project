@@ -46,5 +46,13 @@ namespace QLQA
             fPrintProduct f = new fPrintProduct();
             f.ShowDialog();
         }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            fExportOrder f = new fExportOrder();
+            f.ShowDialog();
+        }
+
+
     }
 }
