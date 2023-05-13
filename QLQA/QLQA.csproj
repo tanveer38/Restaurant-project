@@ -848,5 +848,26 @@
   <ItemGroup>
     <None Include="Resources\icons8-save-100 %281%294.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-table %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-962.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tableware-100 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tableware-100 %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tableware-100 %281%294.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-table %281%294.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-1003.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

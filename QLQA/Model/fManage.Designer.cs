@@ -324,6 +324,7 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1221, 632);
             this.guna2Panel2.TabIndex = 14;
+          
             // 
             // guna2ControlBox1
             // 
@@ -339,7 +340,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(30, 30);
             this.guna2ControlBox1.TabIndex = 13;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+
             // 
             // btnHold
             // 
