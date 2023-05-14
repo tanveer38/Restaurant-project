@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -61,11 +62,45 @@ namespace QLQA.Model
             {
 
                 MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                this.Close();
-               
+                this.Close();               
 
             }
- 
+
+            // Print
+            if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvPrint")
+            {
+
+               string status = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvStatus"].Value);
+
+                if(status == "Đã thanh toán")
+                {
+                    string MainID = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
+                    
+                    //SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
+                    //SqlCommand command = new SqlCommand("select * from tblMain , tblDetails , products " +
+                    //    "where tblMain.MainID = tblDetails.MainID and tblDetails.proID = products.pID " +
+                    //    "and tblMain.MainID = '"+ MainID + "'", con);
+
+                    //SqlDataAdapter sd = new SqlDataAdapter(command);
+                    //DataSet s = new DataSet();
+                    //sd.Fill(s);
+
+                    //rptBill sr = new rptBill();
+                    //sr.SetDataSource(s.Tables["table"]);
+
+                    //fPrintBill f = new fPrintBill();
+                    //f.crystalReportViewerPrintBill.ReportSource = sr;
+
+                    
+                }
+                else
+                {
+                    guna2MessageDialog1.Show("Bạn chưa thanh toán");
+                }
+
+
+            }
+
         }
     }
 }
