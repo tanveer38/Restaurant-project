@@ -604,6 +604,18 @@ namespace QLQA.Model
             lblDriverName.Text = "";
         }
 
-
+        private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvDel")
+            {
+                if (guna2DataGridView1.SelectedRows.Count > 0)
+                {
+                    int rowIndex = guna2DataGridView1.SelectedRows[0].Index;
+                    
+                    guna2DataGridView1.Rows.RemoveAt(rowIndex);
+                    GetTotal();
+                }
+            }
+        }
     }
 }
