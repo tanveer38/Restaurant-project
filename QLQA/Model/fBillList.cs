@@ -75,23 +75,34 @@ namespace QLQA.Model
                 if(status == "Đã thanh toán")
                 {
                     string MainID = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                    
-                    //SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
-                    //SqlCommand command = new SqlCommand("select * from tblMain , tblDetails , products " +
-                    //    "where tblMain.MainID = tblDetails.MainID and tblDetails.proID = products.pID " +
-                    //    "and tblMain.MainID = '"+ MainID + "'", con);
 
-                    //SqlDataAdapter sd = new SqlDataAdapter(command);
-                    //DataSet s = new DataSet();
-                    //sd.Fill(s);
+                    MessageBox.Show(MainID);
 
-                    //rptBill sr = new rptBill();
-                    //sr.SetDataSource(s.Tables["table"]);
+                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
+                    SqlCommand command = new SqlCommand("select * from tblMain , tblDetails , products " +
+                        "where tblMain.MainID = tblDetails.MainID and tblDetails.proID = products.pID " +
+                        "and tblMain.MainID = '" + MainID + "'", con);
+
+                    SqlDataAdapter sd = new SqlDataAdapter(command);
+                    DataSet s = new DataSet();
+                    sd.Fill(s);
+
+                    rptBill sr = new rptBill();
+                    sr.SetDataSource(s.Tables["table"]);
+
+
+                    var fPrintBill = new fPrintBill();
+                    var report = new rptBill();
+
+                    fPrintBill.SetReportSource(report);
+                    fPrintBill.Show();
 
                     //fPrintBill f = new fPrintBill();
                     //f.crystalReportViewerPrintBill.ReportSource = sr;
 
-                    
+                    //fPrintBill f = new fPrintBill();
+                    //f.ShowDialog();
+
                 }
                 else
                 {

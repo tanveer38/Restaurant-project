@@ -18,6 +18,10 @@ namespace QLQA
             InitializeComponent();
         }
 
-        public crystalReportViewerPrintBill
+       
+        public void SetReportSource(CrystalDecisions.CrystalReports.Engine.ReportDocument report)
+        {
+            crystalReportViewerPrintBill.ReportSource = report;
+        }
     }
 }
