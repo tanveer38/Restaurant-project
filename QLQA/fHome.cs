@@ -20,38 +20,36 @@ namespace QLQA
             InitializeComponent();
         }
 
-        //void FillChart()
-        //{
-        //    SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
-        //    DataTable dt = new DataTable();
-        //    con.Open();
-        //    SqlDataAdapter da = new SqlDataAdapter("select aDate ,total from tblMain where status = N'Đã thanh toán'", con);
-        //    da.Fill(dt);
-        //    chart1.DataSource= dt;
-        //    con.Close();
-
-        //    chart1.Series["total"].XValueMember = "aDate";
-        //    chart1.Series["total"].YValueMembers = "total";
-        //    chart1.Titles.Add("Monthly Profit");
-        //}
 
         private void fHome_Load(object sender, EventArgs e)
         {
-            //FillChart();
 
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
-            SqlDataAdapter da = new SqlDataAdapter("select Month(aDate) as months ,SUM(total) as total from tblMain where status = N'Đã thanh toán' group by Month(aDate)", con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            chart1.DataSource= dt;
 
-            chart1.ChartAreas["ChartArea1"].AxisX.Title = "Ngày";
+            // Thống kê doanh thu đơn hàng theo tháng (chart column)
+            SqlDataAdapter da1 = new SqlDataAdapter("select Month(aDate) as months ,SUM(total) as total from tblMain where status = N'Đã thanh toán' group by Month(aDate)", con);
+            DataTable dt1 = new DataTable();
+            da1.Fill(dt1);
+
+            chart1.DataSource= dt1;
+
+            chart1.ChartAreas["ChartArea1"].AxisX.Title = "Tháng";
             chart1.ChartAreas["ChartArea1"].AxisX.Title = "Tổng số tiền";
      
-
             chart1.Series["Tổng tiền"].XValueMember = "months";
             chart1.Series["Tổng tiền"].YValueMembers = "total";
 
+            // Thống kê doanh thu đơn hàng theo tháng (chart circle)
+            SqlDataAdapter da2 = new SqlDataAdapter("select Year(aDate) as years ,SUM(total) as total from tblMain where status = N'Đã thanh toán' group by Year(aDate)", con);
+            DataTable dt2 = new DataTable();
+            da2.Fill(dt2);
+
+            chart2.DataSource= dt2;
+            chart2.ChartAreas["ChartArea1"].AxisX.Title = "Năm";
+            chart2.ChartAreas["ChartArea1"].AxisX.Title = "Tổng số tiền";
+
+            chart2.Series["Tổng tiền"].XValueMember = "years";
+            chart2.Series["Tổng tiền"].YValueMembers = "total";
 
             con.Open();
 
