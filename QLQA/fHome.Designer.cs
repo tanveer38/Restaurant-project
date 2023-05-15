@@ -309,7 +309,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Tổng tiền";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1351, 694);
+            this.chart1.Size = new System.Drawing.Size(1081, 555);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
             // 
@@ -345,6 +345,7 @@
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series2.Legend = "Legend1";
             series2.Name = "Tổng tiền";
+            series2.YValuesPerPoint = 2;
             this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(320, 555);
             this.chart2.TabIndex = 0;
