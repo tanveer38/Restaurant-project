@@ -76,7 +76,6 @@ namespace QLQA.Model
                 {
                     string MainID = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
 
-                    MessageBox.Show(MainID);
 
                     SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
                     SqlCommand command = new SqlCommand("select  * from tblMain as m , tblDetails as dt , products as pd " +
@@ -89,19 +88,13 @@ namespace QLQA.Model
 
                     rptBill sr = new rptBill();
                     sr.SetDataSource(s.Tables["table"]);
-
-
-                    //var fPrintBill = new fPrintBill();
-                    //var report = new rptBill();
-
-                    //fPrintBill.SetReportSource(report);
-                    //fPrintBill.Show();
+                    sr.SetDatabaseLogon("sa", "123456");
 
                     fPrintBill f = new fPrintBill();
                     f.crystalReportViewerPrintBill.ReportSource = sr;
+                    f.crystalReportViewerPrintBill.Refresh();
                     f.ShowDialog();
-                    //fPrintBill f = new fPrintBill();
-                    //f.ShowDialog();
+
 
                 }
                 else
