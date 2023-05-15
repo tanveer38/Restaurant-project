@@ -67,6 +67,10 @@ namespace QLQA.Model
                     MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                     this.Close();
                 }
+                else if (status == "Đã thanh toán")
+                {
+                    guna2MessageDialog1.Show("Đơn hàng đã thanh toán");
+                }
                 else
                 {
                     guna2MessageDialog1.Show("Đơn hàng chưa hoàn thành không thể xem");
