@@ -326,6 +326,11 @@ namespace QLQA.Model
                 guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
                 return;
             }
+            else if (guna2DataGridView1.RowCount == 0)
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn món ăn");
+                return;
+            }
             else 
             {
                 if (MainID == 0) // Insert
@@ -398,7 +403,8 @@ namespace QLQA.Model
 
             }
 
-            if (guna2DataGridView1.SelectedRows.Count > 0) 
+
+            if (guna2DataGridView1.SelectedRows.Count > 0)
             {
                 guna2MessageDialog1.Show("Đặt đơn thành công");
                 MainID = 0;
@@ -411,10 +417,8 @@ namespace QLQA.Model
                 lblTotal.Text = "00";
                 lblDriverName.Text = "";
             }
-            else
-            {
-                guna2MessageDialog1.Show("Vui lòng chọn món ăn");
-            }
+
+
 
         }
 
