@@ -30,27 +30,46 @@ namespace QLQA.Model
             double.TryParse(txtBillAmount.Text, out amt);
             double.TryParse(txtReceived.Text, out receipt);
 
-            change = Math.Abs(amt - receipt); // 
+            change = Math.Abs(amt - receipt); 
 
             txtChange.Text = change.ToString();
         }
 
         public override void btnSave_Click(object sender, EventArgs e)
         {
-            string query = @"Update tblMain set total = @total, received = @rec, change = @change,
+            if (Decimal.TryParse(txtReceived.Text, out decimal received) &&
+                Decimal.TryParse(txtBillAmount.Text, out decimal billAmount))
+            {
+                if (received >= billAmount)
+                {
+                    string query = @"Update tblMain set total = @total, received = @rec, change = @change,
                              status = N'Đã thanh toán' where MainID = @id";
 
-            Hashtable ht = new Hashtable();
-            ht.Add("@id", MainID);
-            ht.Add("@total", txtBillAmount.Text);
-            ht.Add("@rec", txtReceived.Text);
-            ht.Add("@change", txtChange.Text);
+                    Hashtable ht = new Hashtable();
+                    ht.Add("@id", MainID);
+                    ht.Add("@total", txtBillAmount.Text);
+                    ht.Add("@rec", txtReceived.Text);
+                    ht.Add("@change", txtChange.Text);
 
-            if(MainClass.SQL(query, ht) > 0)
+                    if (MainClass.SQL(query, ht) > 0)
+                    {
+                        guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+                        guna2MessageDialog1.Show("Thanh toán thành công");
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    // Hiển thị thông báo khi không thỏa mãn điều kiện
+                    guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+                    guna2MessageDialog1.Show("Số tiền nhận không đủ để thanh toán.");
+                }
+            }
+            else
             {
+                // Hiển thị thông báo khi giá trị không hợp lệ
                 guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-                guna2MessageDialog1.Show("Lưu thành công");
-                this.Close();
+                guna2MessageDialog1.Show("Vui lòng nhập số tiền hợp lệ.");
             }
         }
 

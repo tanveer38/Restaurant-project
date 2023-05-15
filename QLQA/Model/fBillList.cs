@@ -60,9 +60,17 @@ namespace QLQA.Model
             // Edit 
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
+                string status = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvStatus"].Value);
 
-                MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                this.Close();               
+                if(status == "Hoàn thành")
+                {
+                    MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
+                    this.Close();
+                }
+                else
+                {
+                    guna2MessageDialog1.Show("Đơn hàng chưa hoàn thành không thể xem");
+                }
 
             }
 

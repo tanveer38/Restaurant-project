@@ -397,16 +397,25 @@ namespace QLQA.Model
 
 
             }
-            guna2MessageDialog1.Show("Lưu thành công");
-            MainID = 0;
-            detailID = 0;
-            guna2DataGridView1.Rows.Clear();
-            lblTable.Text = "";
-            lblWaiter.Text = "";
-            lblTable.Visible = false;
-            lblWaiter.Visible = false;
-            lblTotal.Text = "00";
-            lblDriverName.Text = "";
+
+            if (guna2DataGridView1.SelectedRows.Count > 0) 
+            {
+                guna2MessageDialog1.Show("Đặt đơn thành công");
+                MainID = 0;
+                detailID = 0;
+                guna2DataGridView1.Rows.Clear();
+                lblTable.Text = "";
+                lblWaiter.Text = "";
+                lblTable.Visible = false;
+                lblWaiter.Visible = false;
+                lblTotal.Text = "00";
+                lblDriverName.Text = "";
+            }
+            else
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn món ăn");
+            }
+
         }
 
 
@@ -483,8 +492,9 @@ namespace QLQA.Model
         private void btnCheckout_Click_1(object sender, EventArgs e)
         {
 
-            if(MainID == id)
+            if (MainID == id)
             {
+
                 fCheckout f = new fCheckout();
                 f.MainID = id;
                 f.amt = Convert.ToDouble(lblTotal.Text);
@@ -503,6 +513,7 @@ namespace QLQA.Model
                 guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
                 return;
             }
+
 
             btnDelivery.FillColor = Color.Transparent;
             btnDelivery.FillColor2 = Color.Transparent;
@@ -617,5 +628,7 @@ namespace QLQA.Model
                 }
             }
         }
+
+
     }
 }
