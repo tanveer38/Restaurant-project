@@ -12,6 +12,7 @@ using ZXing.Common;
 using ZXing.QrCode.Internal;
 using ZXing.Rendering;
 using ZXing;
+using System.Collections;
 
 namespace QLQA
 {
@@ -69,6 +70,22 @@ namespace QLQA
             return new_image;
         }
 
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string query = @"Update tblMain set total = @total,
+                             status = N'Đã thanh toán' where MainID = @id";
 
+            Hashtable ht = new Hashtable();
+            ht.Add("@id", MainID);
+            ht.Add("@total", txt_sotien.Text);
+ 
+
+            if (MainClass.SQL(query, ht) > 0)
+            {
+                guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+                guna2MessageDialog1.Show("Thanh toán thành công");
+                this.Close();
+            }
+        }
     }
 }

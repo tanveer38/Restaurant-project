@@ -113,7 +113,7 @@
             this.dtToDate.Name = "dtToDate";
             this.dtToDate.Size = new System.Drawing.Size(150, 36);
             this.dtToDate.TabIndex = 3;
-            this.dtToDate.Value = new System.DateTime(2023, 5, 13, 0, 31, 23, 518);
+            this.dtToDate.Value = new System.DateTime(2023, 5, 23, 0, 0, 0, 0);
             // 
             // dtFromDate
             // 
@@ -128,7 +128,7 @@
             this.dtFromDate.Name = "dtFromDate";
             this.dtFromDate.Size = new System.Drawing.Size(150, 36);
             this.dtFromDate.TabIndex = 2;
-            this.dtFromDate.Value = new System.DateTime(2023, 5, 13, 0, 31, 15, 757);
+            this.dtFromDate.Value = new System.DateTime(2023, 5, 23, 0, 0, 0, 0);
             // 
             // label2
             // 

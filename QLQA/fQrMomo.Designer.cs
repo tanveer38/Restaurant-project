@@ -42,6 +42,7 @@
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_qrcode)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -169,9 +170,9 @@
             this.btn_pay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_pay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pay.ForeColor = System.Drawing.Color.White;
-            this.btn_pay.Location = new System.Drawing.Point(476, 396);
+            this.btn_pay.Location = new System.Drawing.Point(397, 408);
             this.btn_pay.Name = "btn_pay";
-            this.btn_pay.Size = new System.Drawing.Size(167, 52);
+            this.btn_pay.Size = new System.Drawing.Size(132, 52);
             this.btn_pay.TabIndex = 4;
             this.btn_pay.Text = "Tạo QR";
             this.btn_pay.Click += new System.EventHandler(this.btn_pay_Click);
@@ -221,6 +222,7 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.btnSubmit);
             this.guna2ShadowPanel1.Controls.Add(this.label6);
             this.guna2ShadowPanel1.Controls.Add(this.txt_phone);
             this.guna2ShadowPanel1.Controls.Add(this.txt_name);
@@ -247,7 +249,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(203, 14);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(372, 38);
+            this.label6.Size = new System.Drawing.Size(363, 37);
             this.label6.TabIndex = 10;
             this.label6.Text = "THANH TOÁN MOMO";
             // 
@@ -259,6 +261,23 @@
             this.guna2MessageDialog1.Parent = this;
             this.guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
             this.guna2MessageDialog1.Text = null;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BorderRadius = 10;
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(555, 408);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(132, 52);
+            this.btnSubmit.TabIndex = 11;
+            this.btnSubmit.Text = "Xác nhận";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // fQrMomo
             // 
@@ -296,5 +315,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label label6;
         public Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
+        private Guna.UI2.WinForms.Guna2Button btnSubmit;
     }
 }
