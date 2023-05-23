@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblWaiter = new System.Windows.Forms.Label();
             this.lblTable = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -65,9 +65,9 @@
             this.btnDelivery = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnTake = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnDin = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btnQrMomo = new System.Windows.Forms.PictureBox();
             this.btnKot = new Guna.UI2.WinForms.Guna2Button();
             this.btnCheckout = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQrMomo = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -76,6 +76,7 @@
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQrMomo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblWaiter
@@ -159,19 +160,19 @@
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.guna2DataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.ColumnHeadersHeight = 40;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -184,14 +185,14 @@
             this.dgvAmount,
             this.dgvDel});
             this.guna2DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(814, 202);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -317,7 +318,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel2.Controls.Add(this.btnQrMomo);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel2.Controls.Add(this.btnHold);
             this.guna2Panel2.Controls.Add(this.btnNew);
@@ -363,6 +363,7 @@
             // 
             this.guna2ShadowPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.btnQrMomo);
             this.guna2ShadowPanel2.Controls.Add(this.btnKot);
             this.guna2ShadowPanel2.Controls.Add(this.btnCheckout);
             this.guna2ShadowPanel2.Controls.Add(this.label1);
@@ -663,6 +664,18 @@
             this.btnDin.Text = "Ăn tại quán";
             this.btnDin.Click += new System.EventHandler(this.btnDin_Click_1);
             // 
+            // btnQrMomo
+            // 
+            this.btnQrMomo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQrMomo.Image = global::QLQA.Properties.Resources.logo_momo1;
+            this.btnQrMomo.Location = new System.Drawing.Point(17, 46);
+            this.btnQrMomo.Name = "btnQrMomo";
+            this.btnQrMomo.Size = new System.Drawing.Size(100, 61);
+            this.btnQrMomo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnQrMomo.TabIndex = 15;
+            this.btnQrMomo.TabStop = false;
+            this.btnQrMomo.Click += new System.EventHandler(this.btnQrMomo_Click_1);
+            // 
             // btnKot
             // 
             this.btnKot.BorderRadius = 6;
@@ -676,9 +689,9 @@
             this.btnKot.ForeColor = System.Drawing.Color.White;
             this.btnKot.Image = global::QLQA.Properties.Resources.icons8_add_shopping_cart_1001;
             this.btnKot.ImageOffset = new System.Drawing.Point(0, -2);
-            this.btnKot.Location = new System.Drawing.Point(51, 57);
+            this.btnKot.Location = new System.Drawing.Point(122, 55);
             this.btnKot.Name = "btnKot";
-            this.btnKot.Size = new System.Drawing.Size(120, 49);
+            this.btnKot.Size = new System.Drawing.Size(113, 49);
             this.btnKot.TabIndex = 14;
             this.btnKot.Text = "Đặt đơn";
             this.btnKot.Click += new System.EventHandler(this.btnKot_Click_1);
@@ -695,38 +708,12 @@
             this.btnCheckout.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckout.ForeColor = System.Drawing.Color.White;
             this.btnCheckout.Image = global::QLQA.Properties.Resources.icons8_online_payment_1001;
-            this.btnCheckout.Location = new System.Drawing.Point(200, 57);
+            this.btnCheckout.Location = new System.Drawing.Point(255, 55);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(145, 49);
+            this.btnCheckout.Size = new System.Drawing.Size(125, 49);
             this.btnCheckout.TabIndex = 13;
             this.btnCheckout.Text = "Thanh toán";
             this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click_1);
-            // 
-            // btnQrMomo
-            // 
-            this.btnQrMomo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnQrMomo.BackColor = System.Drawing.Color.Transparent;
-            this.btnQrMomo.BorderRadius = 6;
-            this.btnQrMomo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQrMomo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQrMomo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQrMomo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQrMomo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQrMomo.FillColor = System.Drawing.Color.Transparent;
-            this.btnQrMomo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQrMomo.ForeColor = System.Drawing.Color.Gray;
-            this.btnQrMomo.HoverState.FillColor = System.Drawing.Color.Salmon;
-            this.btnQrMomo.HoverState.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQrMomo.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnQrMomo.HoverState.Image = global::QLQA.Properties.Resources.icons8_restart_1001;
-            this.btnQrMomo.Image = global::QLQA.Properties.Resources.icons8_restart_100__1_;
-            this.btnQrMomo.ImageOffset = new System.Drawing.Point(0, -2);
-            this.btnQrMomo.Location = new System.Drawing.Point(831, 162);
-            this.btnQrMomo.Name = "btnQrMomo";
-            this.btnQrMomo.Size = new System.Drawing.Size(120, 34);
-            this.btnQrMomo.TabIndex = 24;
-            this.btnQrMomo.Text = "momo";
-            this.btnQrMomo.Click += new System.EventHandler(this.btnQrMomo_Click);
             // 
             // fManage
             // 
@@ -755,6 +742,7 @@
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQrMomo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -796,6 +784,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
         private System.Windows.Forms.DataGridViewImageColumn dgvDel;
-        private Guna.UI2.WinForms.Guna2Button btnQrMomo;
+        private System.Windows.Forms.PictureBox btnQrMomo;
     }
 }

@@ -633,10 +633,30 @@ namespace QLQA.Model
             }
         }
 
-        private void btnQrMomo_Click(object sender, EventArgs e)
+
+        private void btnQrMomo_Click_1(object sender, EventArgs e)
         {
-            fQrMomo f = new fQrMomo();
-            f.ShowDialog(); 
+            if (MainID == id)
+            {
+
+                fQrMomo f = new fQrMomo();
+                f.MainID = id;
+                f.amt = Convert.ToDouble(lblTotal.Text);
+                MainClass.BlurBackground(f);
+
+                MainID = 0;
+                guna2DataGridView1.Rows.Clear();
+                lblTable.Text = "";
+                lblWaiter.Text = "";
+                lblTable.Visible = false;
+                lblWaiter.Visible = false;
+                lblTotal.Text = "00";
+            }
+            else
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
+                return;
+            }
         }
     }
 }

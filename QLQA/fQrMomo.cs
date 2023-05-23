@@ -17,25 +17,47 @@ namespace QLQA
 {
     public partial class fQrMomo : Form
     {
+
+        public double amt;
+        public int MainID = 0;
+
+
         public fQrMomo()
         {
             InitializeComponent();
+
+            double amt = 0;
+            double.TryParse(txt_sotien.Text, out amt);
         }
+
+        private void fQrMomo_Load(object sender, EventArgs e)
+        {
+            txt_sotien.Text = amt.ToString();
+        }
+
 
         private void btn_pay_Click(object sender, EventArgs e)
         {
-            var qrcode_text = $"2|99|{txt_phone.Text.Trim()}|{txt_name.Text.Trim()}|{txt_email.Text.Trim()}|0|0|{txtBillAmount.Text.Trim()}";
-            BarcodeWriter barcodeWriter = new BarcodeWriter();
-            EncodingOptions encodingOptions = new EncodingOptions() { Width = 250, Height = 250, Margin = 0, PureBarcode = false };
-            encodingOptions.Hints.Add(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
-            barcodeWriter.Renderer = new BitmapRenderer();
-            barcodeWriter.Options = encodingOptions;
-            barcodeWriter.Format = BarcodeFormat.QR_CODE;
-            Bitmap bitmap = barcodeWriter.Write(qrcode_text);
-            Bitmap logo = resizeImage(Properties.Resources.logo_momo, 64, 64) as Bitmap;
-            Graphics g = Graphics.FromImage(bitmap);
-            g.DrawImage(logo, new Point((bitmap.Width - logo.Width) / 2, (bitmap.Height - logo.Height) / 2));
-            pic_qrcode.Image = bitmap;
+            if (amt > 0)
+            {
+                var qrcode_text = $"2|99|{txt_phone.Text.Trim()}|{txt_name.Text.Trim()}|{txt_email.Text.Trim()}|0|0|{txt_sotien.Text.Trim()}";
+                BarcodeWriter barcodeWriter = new BarcodeWriter();
+                EncodingOptions encodingOptions = new EncodingOptions() { Width = 250, Height = 250, Margin = 0, PureBarcode = false };
+                encodingOptions.Hints.Add(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+                barcodeWriter.Renderer = new BitmapRenderer();
+                barcodeWriter.Options = encodingOptions;
+                barcodeWriter.Format = BarcodeFormat.QR_CODE;
+                Bitmap bitmap = barcodeWriter.Write(qrcode_text);
+                Bitmap logo = resizeImage(Properties.Resources.logo_momo, 64, 64) as Bitmap;
+                Graphics g = Graphics.FromImage(bitmap);
+                g.DrawImage(logo, new Point((bitmap.Width - logo.Width) / 2, (bitmap.Height - logo.Height) / 2));
+                pic_qrcode.Image = bitmap;
+            }
+            else
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn đơn hàng cần thanh toán");
+            }
+
         }
 
         public Image resizeImage(Image image, int new_height, int new_width)
@@ -46,5 +68,7 @@ namespace QLQA
             g.DrawImage(image, 0, 0, new_width, new_height);
             return new_image;
         }
+
+
     }
 }
