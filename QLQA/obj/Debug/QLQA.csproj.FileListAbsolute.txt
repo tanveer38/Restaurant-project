@@ -92,3 +92,8 @@ D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fPrintProduct.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fExportOrder.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.csproj.ResolveComReference.cache
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fPrintBill.resources
+D:\C#\QLQA-Project\QLQA\bin\Debug\zxing.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\zxing.presentation.dll
+D:\C#\QLQA-Project\QLQA\bin\Debug\zxing.xml
+D:\C#\QLQA-Project\QLQA\bin\Debug\zxing.presentation.xml
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fQrMomo.resources

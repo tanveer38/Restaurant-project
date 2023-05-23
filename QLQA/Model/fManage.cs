@@ -633,6 +633,10 @@ namespace QLQA.Model
             }
         }
 
-
+        private void btnQrMomo_Click(object sender, EventArgs e)
+        {
+            fQrMomo f = new fQrMomo();
+            f.ShowDialog(); 
+        }
     }
 }
