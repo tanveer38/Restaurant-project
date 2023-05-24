@@ -59,5 +59,11 @@ namespace QLQA
             fPrintStaff f = new fPrintStaff();
             f.ShowDialog();
         }
+
+        private void btnDisplayCategory_Click(object sender, EventArgs e)
+        {
+            fPrintCategory f = new fPrintCategory();
+            f.ShowDialog();
+        }
     }
 }
