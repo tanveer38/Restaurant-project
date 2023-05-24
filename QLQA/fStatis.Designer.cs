@@ -38,6 +38,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnDisplayStaff = new Guna.UI2.WinForms.Guna2Button();
             this.btnDisplayProduct = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -174,12 +175,34 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.btnDisplayStaff);
             this.panel3.Controls.Add(this.btnDisplayProduct);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 495);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(949, 67);
             this.panel3.TabIndex = 2;
+            // 
+            // btnDisplayStaff
+            // 
+            this.btnDisplayStaff.BorderRadius = 10;
+            this.btnDisplayStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDisplayStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDisplayStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDisplayStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDisplayStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDisplayStaff.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnDisplayStaff.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDisplayStaff.ForeColor = System.Drawing.Color.White;
+            this.btnDisplayStaff.Image = global::QLQA.Properties.Resources.icons8_staff_1004;
+            this.btnDisplayStaff.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnDisplayStaff.Location = new System.Drawing.Point(247, 10);
+            this.btnDisplayStaff.Name = "btnDisplayStaff";
+            this.btnDisplayStaff.Size = new System.Drawing.Size(135, 48);
+            this.btnDisplayStaff.TabIndex = 1;
+            this.btnDisplayStaff.Text = "Nhân viên";
+            this.btnDisplayStaff.TextOffset = new System.Drawing.Point(2, 0);
+            this.btnDisplayStaff.Click += new System.EventHandler(this.btnDisplayStaff_Click);
             // 
             // btnDisplayProduct
             // 
@@ -235,5 +258,6 @@
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button btnDisplayProduct;
         private Guna.UI2.WinForms.Guna2Button btnExcel;
+        private Guna.UI2.WinForms.Guna2Button btnDisplayStaff;
     }
 }

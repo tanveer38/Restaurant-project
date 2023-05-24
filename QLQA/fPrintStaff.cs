@@ -12,23 +12,23 @@ using System.Windows.Forms;
 
 namespace QLQA
 {
-    public partial class fPrintProduct : Form
+    public partial class fPrintStaff : Form
     {
-        public fPrintProduct()
+        public fPrintStaff()
         {
             InitializeComponent();
         }
 
-        private void btnPrintProduct_Click(object sender, EventArgs e)
+        private void btnPrintStaff_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-795K8U1\\TRUNGNGHIA;Initial Catalog=QLQA;Integrated Security=True");
-            SqlCommand command = new SqlCommand("select * from products", con);
+            SqlCommand command = new SqlCommand("select * from staff", con);
 
             SqlDataAdapter sd = new SqlDataAdapter(command);
             DataSet s = new DataSet();
             sd.Fill(s);
 
-            rptListProduct sr = new rptListProduct();
+            rprListStaff sr = new rprListStaff();
             sr.SetDatabaseLogon("sa", "123456");
             sr.SetDataSource(s.Tables["table"]);
             crystalReportViewer1.ReportSource = sr;

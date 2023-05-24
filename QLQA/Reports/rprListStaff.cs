@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLQA {
+namespace QLQA.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace QLQA {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rptBill : ReportClass {
+    public class rprListStaff : ReportClass {
         
-        public rptBill() {
+        public rprListStaff() {
         }
         
         public override string ResourceName {
             get {
-                return "rptBill.rpt";
+                return "rprListStaff.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace QLQA {
         
         public override string FullResourceName {
             get {
-                return "QLQA.rptBill.rpt";
+                return "QLQA.Reports.rprListStaff.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace QLQA {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace QLQA {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,17 +82,33 @@ namespace QLQA {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[6];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrptBill : Component, ICachedReport {
+    public class CachedrprListStaff : Component, ICachedReport {
         
-        public CachedrptBill() {
+        public CachedrprListStaff() {
         }
         
         [Browsable(false)]
@@ -129,7 +145,7 @@ namespace QLQA {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rptBill rpt = new rptBill();
+            rprListStaff rpt = new rprListStaff();
             rpt.Site = this.Site;
             return rpt;
         }

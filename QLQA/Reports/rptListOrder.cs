@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLQA {
+namespace QLQA.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace QLQA {
         
         public override string FullResourceName {
             get {
-                return "QLQA.rptListOrder.rpt";
+                return "QLQA.Reports.rptListOrder.rpt";
             }
             set {
                 // Do nothing

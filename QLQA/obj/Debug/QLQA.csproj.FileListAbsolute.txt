@@ -97,3 +97,4 @@ D:\C#\QLQA-Project\QLQA\bin\Debug\zxing.presentation.dll
 D:\C#\QLQA-Project\QLQA\bin\Debug\zxing.xml
 D:\C#\QLQA-Project\QLQA\bin\Debug\zxing.presentation.xml
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fQrMomo.resources
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fPrintStaff.resources

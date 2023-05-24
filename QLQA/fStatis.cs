@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLQA.Reports;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -53,6 +54,10 @@ namespace QLQA
             f.ShowDialog();
         }
 
-
+        private void btnDisplayStaff_Click(object sender, EventArgs e)
+        {
+            fPrintStaff f = new fPrintStaff();
+            f.ShowDialog();
+        }
     }
 }

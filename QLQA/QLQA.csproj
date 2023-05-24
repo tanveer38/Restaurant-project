@@ -168,6 +168,12 @@
     <Compile Include="fPrintProduct.Designer.cs">
       <DependentUpon>fPrintProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPrintStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPrintStaff.Designer.cs">
+      <DependentUpon>fPrintStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="fQrMomo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,19 +265,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLQADataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="rptBill.cs">
+    <Compile Include="Reports\rprListStaff.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rprListStaff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBill.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptBill.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rptListOrder.cs">
+    <Compile Include="Reports\rptListOrder.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptListOrder.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rptListProduct.cs">
+    <Compile Include="Reports\rptListProduct.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptListProduct.rpt</DependentUpon>
@@ -337,6 +349,9 @@
     <EmbeddedResource Include="fPrintProduct.resx">
       <DependentUpon>fPrintProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fPrintStaff.resx">
+      <DependentUpon>fPrintStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fQrMomo.resx">
       <DependentUpon>fQrMomo.cs</DependentUpon>
     </EmbeddedResource>
@@ -381,15 +396,19 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptBill.rpt">
+    <EmbeddedResource Include="Reports\rprListStaff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rprListStaff.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptBill.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptBill.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptListOrder.rpt">
+    <EmbeddedResource Include="Reports\rptListOrder.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptListOrder.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptListProduct.rpt">
+    <EmbeddedResource Include="Reports\rptListProduct.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptListProduct.cs</LastGenOutput>
     </EmbeddedResource>
@@ -930,6 +949,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_momo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-1004.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
