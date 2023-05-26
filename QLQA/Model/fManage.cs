@@ -541,7 +541,11 @@ namespace QLQA.Model
                 guna2MessageDialog1.Show("Vui lòng chọn loại đơn hàng");
                 return;
             }
-
+            else if (guna2DataGridView1.RowCount == 0)
+            {
+                guna2MessageDialog1.Show("Vui lòng chọn món ăn");
+                return;
+            }
             if (MainID == 0) // Insert
             {
                 query1 = @"Insert into tblMain Values(@aDate, @aTime, @TableName, @WaiterName, 
