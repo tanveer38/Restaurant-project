@@ -107,6 +107,11 @@ namespace QLQA
             Application.Exit();
         }
 
-
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            flogin f = new flogin();
+            f.Show();
+        }
     }
 }

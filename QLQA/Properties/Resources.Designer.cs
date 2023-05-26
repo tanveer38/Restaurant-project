@@ -703,6 +703,26 @@ namespace QLQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-961", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_962 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-962", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_male_user_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-male-user-100", resourceCulture);

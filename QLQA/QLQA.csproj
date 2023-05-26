@@ -162,12 +162,6 @@
     <Compile Include="fPrintBill.Designer.cs">
       <DependentUpon>fPrintBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="fPrintCategory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fPrintCategory.Designer.cs">
-      <DependentUpon>fPrintCategory.cs</DependentUpon>
-    </Compile>
     <Compile Include="fPrintProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,12 +277,6 @@
       <DependentUpon>rptBill.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\rptListCategory.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptListCategory.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Reports\rptListOrder.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -358,9 +346,6 @@
     <EmbeddedResource Include="fPrintBill.resx">
       <DependentUpon>fPrintBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fPrintCategory.resx">
-      <DependentUpon>fPrintCategory.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fPrintProduct.resx">
       <DependentUpon>fPrintProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -418,10 +403,6 @@
     <EmbeddedResource Include="Reports\rptBill.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptBill.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\rptListCategory.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptListCategory.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptListOrder.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -974,6 +955,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-restaurant-table %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-962.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
