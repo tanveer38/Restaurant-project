@@ -132,17 +132,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fExportOrder.cs">
+    <Compile Include="Print\fExportOrder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fExportOrder.Designer.cs">
+    <Compile Include="Print\fExportOrder.Designer.cs">
       <DependentUpon>fExportOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="fHome.cs">
+    <Compile Include="View\fHomeView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fHome.Designer.cs">
-      <DependentUpon>fHome.cs</DependentUpon>
+    <Compile Include="View\fHomeView.Designer.cs">
+      <DependentUpon>fHomeView.cs</DependentUpon>
     </Compile>
     <Compile Include="flogin.cs">
       <SubType>Form</SubType>
@@ -156,22 +156,22 @@
     <Compile Include="fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="fPrintBill.cs">
+    <Compile Include="Print\fPrintBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fPrintBill.Designer.cs">
+    <Compile Include="Print\fPrintBill.Designer.cs">
       <DependentUpon>fPrintBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="fPrintProduct.cs">
+    <Compile Include="Print\fPrintProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fPrintProduct.Designer.cs">
+    <Compile Include="Print\fPrintProduct.Designer.cs">
       <DependentUpon>fPrintProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="fPrintStaff.cs">
+    <Compile Include="Print\fPrintStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fPrintStaff.Designer.cs">
+    <Compile Include="Print\fPrintStaff.Designer.cs">
       <DependentUpon>fPrintStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="fQrMomo.cs">
@@ -180,11 +180,11 @@
     <Compile Include="fQrMomo.Designer.cs">
       <DependentUpon>fQrMomo.cs</DependentUpon>
     </Compile>
-    <Compile Include="fStatis.cs">
+    <Compile Include="View\fStatisView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fStatis.Designer.cs">
-      <DependentUpon>fStatis.cs</DependentUpon>
+    <Compile Include="View\fStatisView.Designer.cs">
+      <DependentUpon>fStatisView.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
     <Compile Include="Model\fAccountAdd.cs">
@@ -343,11 +343,11 @@
     <Compile Include="View\fTableView.Designer.cs">
       <DependentUpon>fTableView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fExportOrder.resx">
+    <EmbeddedResource Include="Print\fExportOrder.resx">
       <DependentUpon>fExportOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fHome.resx">
-      <DependentUpon>fHome.cs</DependentUpon>
+    <EmbeddedResource Include="View\fHomeView.resx">
+      <DependentUpon>fHomeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="flogin.resx">
       <DependentUpon>flogin.cs</DependentUpon>
@@ -355,20 +355,20 @@
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fPrintBill.resx">
+    <EmbeddedResource Include="Print\fPrintBill.resx">
       <DependentUpon>fPrintBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fPrintProduct.resx">
+    <EmbeddedResource Include="Print\fPrintProduct.resx">
       <DependentUpon>fPrintProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fPrintStaff.resx">
+    <EmbeddedResource Include="Print\fPrintStaff.resx">
       <DependentUpon>fPrintStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fQrMomo.resx">
       <DependentUpon>fQrMomo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fStatis.resx">
-      <DependentUpon>fStatis.cs</DependentUpon>
+    <EmbeddedResource Include="View\fStatisView.resx">
+      <DependentUpon>fStatisView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\fAccountAdd.resx">
       <DependentUpon>fAccountAdd.cs</DependentUpon>

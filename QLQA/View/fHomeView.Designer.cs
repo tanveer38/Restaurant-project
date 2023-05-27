@@ -1,6 +1,6 @@
 ﻿namespace QLQA
 {
-    partial class fHome
+    partial class fHomeView
     {
         /// <summary>
         /// Required designer variable.

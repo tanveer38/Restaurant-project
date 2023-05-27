@@ -49,7 +49,6 @@ D:\C#\QLQA-Project\QLQA\bin\Debug\QLQA.pdb
 D:\C#\QLQA-Project\QLQA\bin\Debug\Guna.UI2.dll
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.csproj.AssemblyReference.cache
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.csproj.SuggestedBindingRedirects.cache
-D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fHome.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.flogin.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fMain.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.Model.fBillList.resources
@@ -87,7 +86,6 @@ D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.dll
 D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.SqlServer.dll
 D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.xml
 D:\C#\QLQA-Project\QLQA\bin\Debug\EntityFramework.SqlServer.xml
-D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fStatis.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fPrintProduct.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fExportOrder.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.csproj.ResolveComReference.cache
@@ -100,3 +98,5 @@ D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fQrMomo.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fPrintStaff.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.View.fAccountView.resources
 D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.Model.fAccountAdd.resources
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fHomeView.resources
+D:\C#\QLQA-Project\QLQA\obj\Debug\QLQA.fStatisView.resources

@@ -1,6 +1,6 @@
 ﻿namespace QLQA
 {
-    partial class fStatis
+    partial class fStatisView
     {
         /// <summary>
         /// Required designer variable.
@@ -114,7 +114,7 @@
             this.dtToDate.Name = "dtToDate";
             this.dtToDate.Size = new System.Drawing.Size(150, 36);
             this.dtToDate.TabIndex = 3;
-            this.dtToDate.Value = new System.DateTime(2023, 5, 23, 0, 0, 0, 0);
+            this.dtToDate.Value = new System.DateTime(2023, 5, 27, 0, 0, 0, 0);
             // 
             // dtFromDate
             // 
@@ -129,7 +129,7 @@
             this.dtFromDate.Name = "dtFromDate";
             this.dtFromDate.Size = new System.Drawing.Size(150, 36);
             this.dtFromDate.TabIndex = 2;
-            this.dtFromDate.Value = new System.DateTime(2023, 5, 23, 0, 0, 0, 0);
+            this.dtFromDate.Value = new System.DateTime(2023, 5, 27, 0, 0, 0, 0);
             // 
             // label2
             // 
@@ -168,6 +168,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ShowLogo = false;
             this.crystalReportViewer1.Size = new System.Drawing.Size(949, 483);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
@@ -225,7 +226,7 @@
             this.btnDisplayProduct.TextOffset = new System.Drawing.Point(2, 0);
             this.btnDisplayProduct.Click += new System.EventHandler(this.btnDisplayProduct_Click);
             // 
-            // fStatis
+            // fStatisView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
@@ -234,7 +235,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fStatis";
+            this.Name = "fStatisView";
             this.Text = "fPrint";
             this.Load += new System.EventHandler(this.fPrint_Load);
             this.panel1.ResumeLayout(false);

@@ -13,9 +13,9 @@ using System.Data.SqlClient;
 
 namespace QLQA
 {
-    public partial class fHome : Form
+    public partial class fHomeView : Form
     {
-        public fHome()
+        public fHomeView()
         {
             InitializeComponent();
         }

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace QLQA
 {
-    public partial class fStatis : Form
+    public partial class fStatisView : Form
     {
-        public fStatis()
+        public fStatisView()
         {
             InitializeComponent();
         }

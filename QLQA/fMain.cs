@@ -54,7 +54,7 @@ namespace QLQA
         private void btnHome_Click_1(object sender, EventArgs e)
         {
             MainTop.Visible = true;
-            AddControls(new fHome());
+            AddControls(new fHomeView());
         }
 
         private void btnCategory_Click_1(object sender, EventArgs e)
@@ -105,7 +105,7 @@ namespace QLQA
         private void btnStatis_Click(object sender, EventArgs e)
         {
             MainTop.Visible = true;
-            AddControls(new fStatis());
+            AddControls(new fStatisView());
         }
 
         private void btnExit_Click_1(object sender, EventArgs e)
