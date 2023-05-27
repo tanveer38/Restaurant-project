@@ -83,6 +83,12 @@ namespace QLQA
             AddControls(new fStaffView());
         }
 
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            MainTop.Visible = true;
+            AddControls(new fAccountView());
+        }
+
         private void btnPOS_Click_1(object sender, EventArgs e)
         {
             MainTop.Visible = false;
@@ -113,5 +119,7 @@ namespace QLQA
             flogin f = new flogin();
             f.Show();
         }
+
+ 
     }
 }
