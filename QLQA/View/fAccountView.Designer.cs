@@ -155,7 +155,7 @@
             // 
             // dgvName
             // 
-            this.dgvName.HeaderText = "Tên";
+            this.dgvName.HeaderText = "Tên hiển thị";
             this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;

@@ -112,9 +112,9 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(18, 135);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 22);
+            this.label4.Size = new System.Drawing.Size(103, 22);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Tên ";
+            this.label4.Text = "Tên hiển thị";
             // 
             // txtName
             // 

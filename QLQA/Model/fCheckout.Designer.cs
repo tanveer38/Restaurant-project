@@ -163,9 +163,9 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(39, 116);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 22);
+            this.label4.Size = new System.Drawing.Size(106, 22);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Thay đổi";
+            this.label4.Text = "Tiền thối lại";
             // 
             // guna2ShadowPanel1
             // 
