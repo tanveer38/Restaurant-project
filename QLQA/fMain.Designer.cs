@@ -272,8 +272,8 @@
             this.btnAccount.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
             this.btnAccount.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.btnAccount.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAccount.HoverState.Image = global::QLQA.Properties.Resources.icons8_staff_1001;
-            this.btnAccount.Image = global::QLQA.Properties.Resources.icons8_staff_100;
+            this.btnAccount.HoverState.Image = global::QLQA.Properties.Resources.icons8_account_100__1_;
+            this.btnAccount.Image = global::QLQA.Properties.Resources.icons8_account_100;
             this.btnAccount.ImageSize = new System.Drawing.Size(25, 25);
             this.btnAccount.Location = new System.Drawing.Point(12, 547);
             this.btnAccount.Name = "btnAccount";
