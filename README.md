@@ -1,4 +1,3 @@
-![donhang1](https://github.com/vtnghia16/Restaurant-project/assets/80100031/825f7fba-d3d4-449b-8b69-ae38ad89eb4d)
 <b>Đăng nhập</b>
 <br><br>
 ![dangnhap](https://github.com/vtnghia16/Restaurant-project/assets/80100031/d7d0f499-2c6d-4221-8546-7ea140da85fc)
