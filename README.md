@@ -51,11 +51,11 @@
 ![thongke](https://github.com/vtnghia16/Restaurant-project/assets/80100031/0ac4f781-7548-4194-8e39-68917fd949d4)
 ![excel](https://github.com/vtnghia16/Restaurant-project/assets/80100031/5e17a5c0-6631-4354-88f0-696c323d148e)
 
-- thống kê món ăn
+- Thống kê món ăn
 ![tkmonan](https://github.com/vtnghia16/Restaurant-project/assets/80100031/cf163102-940f-4567-9399-42725144d49c)
 ![tkmonan1](https://github.com/vtnghia16/Restaurant-project/assets/80100031/8d41e08e-50c5-4050-abb8-77a58b168163)
 
-- thống kê nhân viên
+- Thống kê nhân viên
 ![tknhanvien](https://github.com/vtnghia16/Restaurant-project/assets/80100031/151259cc-b31c-4e3e-a450-226a1f55cb2a)
 
 
